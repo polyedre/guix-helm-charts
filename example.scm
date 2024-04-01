@@ -48,12 +48,9 @@ pre-configured Kubernetes resources.")
          #~(begin
            (use-modules (guix build utils))
            (mkdir-p #$output)
-           (system (format #f "~a template ~a ~a --output-dir ~a --release-name --values ~a"
-                    (string-append #$helm "/bin/helm")
-                    #$name
-                    #$chart
-                    #$output
-                    #$(plain-file "values.json" (scm->json-string values))))))))
+           (invoke (string-append #$helm "/bin/helm")
+                   "template" #$name #$chart "--output-dir" #$output "--release-name" "--values"
+                    #$(plain-file "values.json" (scm->json-string values)))))))
 
 (use-modules (helm ilum ilum-jupyter)
              (helm bitnami nginx))
