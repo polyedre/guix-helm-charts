@@ -55,10 +55,13 @@ pre-configured Kubernetes resources.")
                     #$output
                     #$(plain-file "values.json" (scm->json-string values))))))))
 
-(use-modules (helm ilum ilum-jupyter))
-(use-modules (helm bitnami nginx))
+(use-modules (helm ilum ilum-jupyter)
+             (helm bitnami nginx))
 
 (directory-union "helm-releases" (list
-  (helm-release "my-custom-release-name" ilum-jupyter-6.1.0 "default" '())
+  (helm-release "my-custom-release-name" ilum-jupyter-6.1.0 "default"
+                '((ingress . ((enabled . #t)
+                              (host . "example.com")))
+                  (tolerations . #(((operator . "Exists"))))))
   (helm-release "my-second" ilum-jupyter-6.0.0 "test" '())
   (helm-release "another" nginx-15.14.0 "kubernetes-tools" '())))

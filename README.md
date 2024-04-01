@@ -16,6 +16,18 @@ Run the python `main.py` python script.
 
 ## Use the Helm Packages
 
+```scheme
+(use-modules (helm ilum ilum-jupyter))
+(use-modules (helm bitnami nginx))
+
+(directory-union "helm-releases" (list
+  (helm-release "my-custom-release-name" ilum-jupyter-6.1.0 "default"
+                '((ingress . ((enabled . #t)
+                              (host . "example.com")))
+  (helm-release "my-second" ilum-jupyter-6.0.0 "test" '())
+  (helm-release "another" nginx-15.14.0 "kubernetes-tools" '())))
+```
+
 See [example.scm](example.scm).
 
 ## Disclaimer
