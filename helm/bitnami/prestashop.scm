@@ -10,6 +10,34 @@
   #:use-module (guix build-system copy))
 
 
+(define-public prestashop-21.0.0
+  (package
+   (name "prestashop")
+   (version "21.0.0")
+   (source (origin
+            (method url-fetch)
+            (uri "https://charts.bitnami.com/bitnami/prestashop-21.0.0.tgz")
+            (sha256 #f)))
+   (build-system copy-build-system)
+   (home-page "https://bitnami.com")
+   (synopsis "PrestaShop is a powerful open source eCommerce platform used by over 250,000 online storefronts worldwide. It is easily customizable, responsive, and includes powerful tools to drive online sales.")
+   (description "PrestaShop is a powerful open source eCommerce platform used by over 250,000 online storefronts worldwide. It is easily customizable, responsive, and includes powerful tools to drive online sales.")
+   (license #f)))
+
+(define-public prestashop-20.5.2
+  (package
+   (name "prestashop")
+   (version "20.5.2")
+   (source (origin
+            (method url-fetch)
+            (uri "https://charts.bitnami.com/bitnami/prestashop-20.5.2.tgz")
+            (sha256 #f)))
+   (build-system copy-build-system)
+   (home-page "https://bitnami.com")
+   (synopsis "PrestaShop is a powerful open source eCommerce platform used by over 250,000 online storefronts worldwide. It is easily customizable, responsive, and includes powerful tools to drive online sales.")
+   (description "PrestaShop is a powerful open source eCommerce platform used by over 250,000 online storefronts worldwide. It is easily customizable, responsive, and includes powerful tools to drive online sales.")
+   (license #f)))
+
 (define-public prestashop-20.5.1
   (package
    (name "prestashop")

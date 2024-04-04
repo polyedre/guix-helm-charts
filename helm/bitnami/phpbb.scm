@@ -10,6 +10,48 @@
   #:use-module (guix build-system copy))
 
 
+(define-public phpbb-18.0.0
+  (package
+   (name "phpbb")
+   (version "18.0.0")
+   (source (origin
+            (method url-fetch)
+            (uri "https://charts.bitnami.com/bitnami/phpbb-18.0.0.tgz")
+            (sha256 #f)))
+   (build-system copy-build-system)
+   (home-page "https://bitnami.com")
+   (synopsis "phpBB is a popular bulletin board that features robust messaging capabilities such as flat message structure, subforums, topic split/merge/lock, user groups, full-text search, and attachments.")
+   (description "phpBB is a popular bulletin board that features robust messaging capabilities such as flat message structure, subforums, topic split/merge/lock, user groups, full-text search, and attachments.")
+   (license #f)))
+
+(define-public phpbb-17.0.1
+  (package
+   (name "phpbb")
+   (version "17.0.1")
+   (source (origin
+            (method url-fetch)
+            (uri "https://charts.bitnami.com/bitnami/phpbb-17.0.1.tgz")
+            (sha256 #f)))
+   (build-system copy-build-system)
+   (home-page "https://bitnami.com")
+   (synopsis "phpBB is a popular bulletin board that features robust messaging capabilities such as flat message structure, subforums, topic split/merge/lock, user groups, full-text search, and attachments.")
+   (description "phpBB is a popular bulletin board that features robust messaging capabilities such as flat message structure, subforums, topic split/merge/lock, user groups, full-text search, and attachments.")
+   (license #f)))
+
+(define-public phpbb-17.0.0
+  (package
+   (name "phpbb")
+   (version "17.0.0")
+   (source (origin
+            (method url-fetch)
+            (uri "https://charts.bitnami.com/bitnami/phpbb-17.0.0.tgz")
+            (sha256 #f)))
+   (build-system copy-build-system)
+   (home-page "https://bitnami.com")
+   (synopsis "phpBB is a popular bulletin board that features robust messaging capabilities such as flat message structure, subforums, topic split/merge/lock, user groups, full-text search, and attachments.")
+   (description "phpBB is a popular bulletin board that features robust messaging capabilities such as flat message structure, subforums, topic split/merge/lock, user groups, full-text search, and attachments.")
+   (license #f)))
+
 (define-public phpbb-16.5.0
   (package
    (name "phpbb")

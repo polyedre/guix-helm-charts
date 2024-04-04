@@ -10,6 +10,20 @@
   #:use-module (guix build-system copy))
 
 
+(define-public grafana-tempo-3.0.2
+  (package
+   (name "grafana-tempo")
+   (version "3.0.2")
+   (source (origin
+            (method url-fetch)
+            (uri "https://charts.bitnami.com/bitnami/grafana-tempo-3.0.2.tgz")
+            (sha256 #f)))
+   (build-system copy-build-system)
+   (home-page "https://bitnami.com")
+   (synopsis "Grafana Tempo is a distributed tracing system that has out-of-the-box integration with Grafana. It is highly scalable and works with many popular tracing protocols.")
+   (description "Grafana Tempo is a distributed tracing system that has out-of-the-box integration with Grafana. It is highly scalable and works with many popular tracing protocols.")
+   (license #f)))
+
 (define-public grafana-tempo-3.0.1
   (package
    (name "grafana-tempo")

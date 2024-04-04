@@ -10,6 +10,34 @@
   #:use-module (guix build-system copy))
 
 
+(define-public argo-workflows-8.0.3
+  (package
+   (name "argo-workflows")
+   (version "8.0.3")
+   (source (origin
+            (method url-fetch)
+            (uri "https://charts.bitnami.com/bitnami/argo-workflows-8.0.3.tgz")
+            (sha256 #f)))
+   (build-system copy-build-system)
+   (home-page "https://bitnami.com")
+   (synopsis "Argo Workflows is meant to orchestrate Kubernetes jobs in parallel. It uses DAG and step-based workflows")
+   (description "Argo Workflows is meant to orchestrate Kubernetes jobs in parallel. It uses DAG and step-based workflows")
+   (license #f)))
+
+(define-public argo-workflows-8.0.2
+  (package
+   (name "argo-workflows")
+   (version "8.0.2")
+   (source (origin
+            (method url-fetch)
+            (uri "https://charts.bitnami.com/bitnami/argo-workflows-8.0.2.tgz")
+            (sha256 #f)))
+   (build-system copy-build-system)
+   (home-page "https://bitnami.com")
+   (synopsis "Argo Workflows is meant to orchestrate Kubernetes jobs in parallel. It uses DAG and step-based workflows")
+   (description "Argo Workflows is meant to orchestrate Kubernetes jobs in parallel. It uses DAG and step-based workflows")
+   (license #f)))
+
 (define-public argo-workflows-8.0.1
   (package
    (name "argo-workflows")

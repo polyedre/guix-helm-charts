@@ -10,6 +10,34 @@
   #:use-module (guix build-system copy))
 
 
+(define-public opensearch-1.0.2
+  (package
+   (name "opensearch")
+   (version "1.0.2")
+   (source (origin
+            (method url-fetch)
+            (uri "https://charts.bitnami.com/bitnami/opensearch-1.0.2.tgz")
+            (sha256 #f)))
+   (build-system copy-build-system)
+   (home-page "https://bitnami.com")
+   (synopsis "OpenSearch is a scalable open-source solution for search, analytics, and observability. Features full-text queries, natural language processing, custom dictionaries, amongst others.")
+   (description "OpenSearch is a scalable open-source solution for search, analytics, and observability. Features full-text queries, natural language processing, custom dictionaries, amongst others.")
+   (license #f)))
+
+(define-public opensearch-1.0.1
+  (package
+   (name "opensearch")
+   (version "1.0.1")
+   (source (origin
+            (method url-fetch)
+            (uri "https://charts.bitnami.com/bitnami/opensearch-1.0.1.tgz")
+            (sha256 #f)))
+   (build-system copy-build-system)
+   (home-page "https://bitnami.com")
+   (synopsis "OpenSearch is a scalable open-source solution for search, analytics, and observability. Features full-text queries, natural language processing, custom dictionaries, amongst others.")
+   (description "OpenSearch is a scalable open-source solution for search, analytics, and observability. Features full-text queries, natural language processing, custom dictionaries, amongst others.")
+   (license #f)))
+
 (define-public opensearch-1.0.0
   (package
    (name "opensearch")

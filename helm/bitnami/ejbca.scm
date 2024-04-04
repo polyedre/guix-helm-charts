@@ -10,6 +10,48 @@
   #:use-module (guix build-system copy))
 
 
+(define-public ejbca-14.0.0
+  (package
+   (name "ejbca")
+   (version "14.0.0")
+   (source (origin
+            (method url-fetch)
+            (uri "https://charts.bitnami.com/bitnami/ejbca-14.0.0.tgz")
+            (sha256 #f)))
+   (build-system copy-build-system)
+   (home-page "https://bitnami.com")
+   (synopsis "EJBCA is an enterprise class PKI Certificate Authority software, built using Java (JEE) technology.")
+   (description "EJBCA is an enterprise class PKI Certificate Authority software, built using Java (JEE) technology.")
+   (license #f)))
+
+(define-public ejbca-13.0.2
+  (package
+   (name "ejbca")
+   (version "13.0.2")
+   (source (origin
+            (method url-fetch)
+            (uri "https://charts.bitnami.com/bitnami/ejbca-13.0.2.tgz")
+            (sha256 #f)))
+   (build-system copy-build-system)
+   (home-page "https://bitnami.com")
+   (synopsis "EJBCA is an enterprise class PKI Certificate Authority software, built using Java (JEE) technology.")
+   (description "EJBCA is an enterprise class PKI Certificate Authority software, built using Java (JEE) technology.")
+   (license #f)))
+
+(define-public ejbca-13.0.1
+  (package
+   (name "ejbca")
+   (version "13.0.1")
+   (source (origin
+            (method url-fetch)
+            (uri "https://charts.bitnami.com/bitnami/ejbca-13.0.1.tgz")
+            (sha256 #f)))
+   (build-system copy-build-system)
+   (home-page "https://bitnami.com")
+   (synopsis "EJBCA is an enterprise class PKI Certificate Authority software, built using Java (JEE) technology.")
+   (description "EJBCA is an enterprise class PKI Certificate Authority software, built using Java (JEE) technology.")
+   (license #f)))
+
 (define-public ejbca-13.0.0
   (package
    (name "ejbca")

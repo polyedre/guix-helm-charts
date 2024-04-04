@@ -10,6 +10,34 @@
   #:use-module (guix build-system copy))
 
 
+(define-public clickhouse-6.0.0
+  (package
+   (name "clickhouse")
+   (version "6.0.0")
+   (source (origin
+            (method url-fetch)
+            (uri "https://charts.bitnami.com/bitnami/clickhouse-6.0.0.tgz")
+            (sha256 #f)))
+   (build-system copy-build-system)
+   (home-page "https://bitnami.com")
+   (synopsis "ClickHouse is an open-source column-oriented OLAP database management system. Use it to boost your database performance while providing linear scalability and hardware efficiency.")
+   (description "ClickHouse is an open-source column-oriented OLAP database management system. Use it to boost your database performance while providing linear scalability and hardware efficiency.")
+   (license #f)))
+
+(define-public clickhouse-5.3.3
+  (package
+   (name "clickhouse")
+   (version "5.3.3")
+   (source (origin
+            (method url-fetch)
+            (uri "https://charts.bitnami.com/bitnami/clickhouse-5.3.3.tgz")
+            (sha256 #f)))
+   (build-system copy-build-system)
+   (home-page "https://bitnami.com")
+   (synopsis "ClickHouse is an open-source column-oriented OLAP database management system. Use it to boost your database performance while providing linear scalability and hardware efficiency.")
+   (description "ClickHouse is an open-source column-oriented OLAP database management system. Use it to boost your database performance while providing linear scalability and hardware efficiency.")
+   (license #f)))
+
 (define-public clickhouse-5.3.2
   (package
    (name "clickhouse")

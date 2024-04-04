@@ -10,6 +10,34 @@
   #:use-module (guix build-system copy))
 
 
+(define-public schema-registry-18.0.1
+  (package
+   (name "schema-registry")
+   (version "18.0.1")
+   (source (origin
+            (method url-fetch)
+            (uri "https://charts.bitnami.com/bitnami/schema-registry-18.0.1.tgz")
+            (sha256 #f)))
+   (build-system copy-build-system)
+   (home-page "https://bitnami.com")
+   (synopsis "Confluent Schema Registry provides a RESTful interface by adding a serving layer for your metadata on top of Kafka. It expands Kafka enabling support for Apache Avro, JSON, and Protobuf schemas.")
+   (description "Confluent Schema Registry provides a RESTful interface by adding a serving layer for your metadata on top of Kafka. It expands Kafka enabling support for Apache Avro, JSON, and Protobuf schemas.")
+   (license #f)))
+
+(define-public schema-registry-18.0.0
+  (package
+   (name "schema-registry")
+   (version "18.0.0")
+   (source (origin
+            (method url-fetch)
+            (uri "https://charts.bitnami.com/bitnami/schema-registry-18.0.0.tgz")
+            (sha256 #f)))
+   (build-system copy-build-system)
+   (home-page "https://bitnami.com")
+   (synopsis "Confluent Schema Registry provides a RESTful interface by adding a serving layer for your metadata on top of Kafka. It expands Kafka enabling support for Apache Avro, JSON, and Protobuf schemas.")
+   (description "Confluent Schema Registry provides a RESTful interface by adding a serving layer for your metadata on top of Kafka. It expands Kafka enabling support for Apache Avro, JSON, and Protobuf schemas.")
+   (license #f)))
+
 (define-public schema-registry-17.1.1
   (package
    (name "schema-registry")

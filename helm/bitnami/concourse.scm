@@ -10,6 +10,20 @@
   #:use-module (guix build-system copy))
 
 
+(define-public concourse-4.0.0
+  (package
+   (name "concourse")
+   (version "4.0.0")
+   (source (origin
+            (method url-fetch)
+            (uri "https://charts.bitnami.com/bitnami/concourse-4.0.0.tgz")
+            (sha256 #f)))
+   (build-system copy-build-system)
+   (home-page "https://bitnami.com")
+   (synopsis "Concourse is an automation system written in Go. It is most commonly used for CI/CD, and is built to scale to any kind of automation pipeline, from simple to complex.")
+   (description "Concourse is an automation system written in Go. It is most commonly used for CI/CD, and is built to scale to any kind of automation pipeline, from simple to complex.")
+   (license #f)))
+
 (define-public concourse-3.7.3
   (package
    (name "concourse")

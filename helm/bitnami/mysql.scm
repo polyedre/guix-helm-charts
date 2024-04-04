@@ -10,6 +10,20 @@
   #:use-module (guix build-system copy))
 
 
+(define-public mysql-10.1.1
+  (package
+   (name "mysql")
+   (version "10.1.1")
+   (source (origin
+            (method url-fetch)
+            (uri "https://charts.bitnami.com/bitnami/mysql-10.1.1.tgz")
+            (sha256 #f)))
+   (build-system copy-build-system)
+   (home-page "https://bitnami.com")
+   (synopsis "MySQL is a fast, reliable, scalable, and easy to use open source relational database system. Designed to handle mission-critical, heavy-load production applications.")
+   (description "MySQL is a fast, reliable, scalable, and easy to use open source relational database system. Designed to handle mission-critical, heavy-load production applications.")
+   (license #f)))
+
 (define-public mysql-10.1.0
   (package
    (name "mysql")

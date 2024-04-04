@@ -10,6 +10,20 @@
   #:use-module (guix build-system copy))
 
 
+(define-public nats-8.0.1
+  (package
+   (name "nats")
+   (version "8.0.1")
+   (source (origin
+            (method url-fetch)
+            (uri "https://charts.bitnami.com/bitnami/nats-8.0.1.tgz")
+            (sha256 #f)))
+   (build-system copy-build-system)
+   (home-page "https://bitnami.com")
+   (synopsis "NATS is an open source, lightweight and high-performance messaging system. It is ideal for distributed systems and supports modern cloud architectures and pub-sub, request-reply and queuing models.")
+   (description "NATS is an open source, lightweight and high-performance messaging system. It is ideal for distributed systems and supports modern cloud architectures and pub-sub, request-reply and queuing models.")
+   (license #f)))
+
 (define-public nats-8.0.0
   (package
    (name "nats")

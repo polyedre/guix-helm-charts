@@ -10,6 +10,20 @@
   #:use-module (guix build-system copy))
 
 
+(define-public vault-1.0.1
+  (package
+   (name "vault")
+   (version "1.0.1")
+   (source (origin
+            (method url-fetch)
+            (uri "https://charts.bitnami.com/bitnami/vault-1.0.1.tgz")
+            (sha256 #f)))
+   (build-system copy-build-system)
+   (home-page "https://bitnami.com")
+   (synopsis "Vault is a tool for securely managing and accessing secrets using a unified interface. Features secure storage, dynamic secrets, data encryption and revocation.")
+   (description "Vault is a tool for securely managing and accessing secrets using a unified interface. Features secure storage, dynamic secrets, data encryption and revocation.")
+   (license #f)))
+
 (define-public vault-1.0.0
   (package
    (name "vault")

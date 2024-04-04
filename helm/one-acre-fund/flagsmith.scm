@@ -1,0 +1,81 @@
+
+(define-module (helm one-acre-fund flagsmith)
+  #:use-module (guix utils)
+  #:use-module (guix gexp)
+  #:use-module (guix build utils)
+  #:use-module (json)
+  #:use-module (gnu packages base)
+  #:use-module (guix packages)
+  #:use-module (guix download)
+  #:use-module (guix build-system copy))
+
+
+(define-public flagsmith-0.1.5
+  (package
+   (name "flagsmith")
+   (version "0.1.5")
+   (source (origin
+            (method url-fetch)
+            (uri "https://github.com/one-acre-fund/oaf-public-charts/releases/download/flagsmith-0.1.5/flagsmith-0.1.5.tgz")
+            (sha256 #f)))
+   (build-system copy-build-system)
+   (home-page "https://flagsmith.com/")
+   (synopsis "Flagsmith - a Feature flag and remote configuration solution")
+   (description "Flagsmith - a Feature flag and remote configuration solution")
+   (license #f)))
+
+(define-public flagsmith-0.1.4
+  (package
+   (name "flagsmith")
+   (version "0.1.4")
+   (source (origin
+            (method url-fetch)
+            (uri "https://github.com/one-acre-fund/oaf-public-charts/releases/download/flagsmith-0.1.4/flagsmith-0.1.4.tgz")
+            (sha256 #f)))
+   (build-system copy-build-system)
+   (home-page "https://flagsmith.com/")
+   (synopsis "Flagsmith - a Feature flag and remote configuration solution")
+   (description "Flagsmith - a Feature flag and remote configuration solution")
+   (license #f)))
+
+(define-public flagsmith-0.1.3
+  (package
+   (name "flagsmith")
+   (version "0.1.3")
+   (source (origin
+            (method url-fetch)
+            (uri "https://github.com/one-acre-fund/oaf-public-charts/releases/download/flagsmith-0.1.3/flagsmith-0.1.3.tgz")
+            (sha256 #f)))
+   (build-system copy-build-system)
+   (home-page "https://flagsmith.com/")
+   (synopsis "Flagsmith - a Feature flag and remote configuration solution")
+   (description "Flagsmith - a Feature flag and remote configuration solution")
+   (license #f)))
+
+(define-public flagsmith-0.1.2
+  (package
+   (name "flagsmith")
+   (version "0.1.2")
+   (source (origin
+            (method url-fetch)
+            (uri "https://github.com/one-acre-fund/oaf-public-charts/releases/download/flagsmith-0.1.2/flagsmith-0.1.2.tgz")
+            (sha256 #f)))
+   (build-system copy-build-system)
+   (home-page "https://flagsmith.com/")
+   (synopsis "Flagsmith - a Feature flag and remote configuration solution")
+   (description "Flagsmith - a Feature flag and remote configuration solution")
+   (license #f)))
+
+(define-public flagsmith-0.1.1
+  (package
+   (name "flagsmith")
+   (version "0.1.1")
+   (source (origin
+            (method url-fetch)
+            (uri "https://github.com/one-acre-fund/oaf-public-charts/releases/download/flagsmith-0.1.1/flagsmith-0.1.1.tgz")
+            (sha256 #f)))
+   (build-system copy-build-system)
+   (home-page "https://flagsmith.com/")
+   (synopsis "Flagsmith - a Feature flag and remote configuration solution")
+   (description "Flagsmith - a Feature flag and remote configuration solution")
+   (license #f)))

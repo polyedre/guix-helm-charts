@@ -10,6 +10,34 @@
   #:use-module (guix build-system copy))
 
 
+(define-public opencart-18.0.0
+  (package
+   (name "opencart")
+   (version "18.0.0")
+   (source (origin
+            (method url-fetch)
+            (uri "https://charts.bitnami.com/bitnami/opencart-18.0.0.tgz")
+            (sha256 #f)))
+   (build-system copy-build-system)
+   (home-page "https://bitnami.com")
+   (synopsis "OpenCart is free open source ecommerce platform for online merchants. OpenCart provides a professional and reliable foundation from which to build a successful online store.")
+   (description "OpenCart is free open source ecommerce platform for online merchants. OpenCart provides a professional and reliable foundation from which to build a successful online store.")
+   (license #f)))
+
+(define-public opencart-17.5.2
+  (package
+   (name "opencart")
+   (version "17.5.2")
+   (source (origin
+            (method url-fetch)
+            (uri "https://charts.bitnami.com/bitnami/opencart-17.5.2.tgz")
+            (sha256 #f)))
+   (build-system copy-build-system)
+   (home-page "https://bitnami.com")
+   (synopsis "OpenCart is free open source ecommerce platform for online merchants. OpenCart provides a professional and reliable foundation from which to build a successful online store.")
+   (description "OpenCart is free open source ecommerce platform for online merchants. OpenCart provides a professional and reliable foundation from which to build a successful online store.")
+   (license #f)))
+
 (define-public opencart-17.5.1
   (package
    (name "opencart")

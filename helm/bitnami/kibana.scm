@@ -10,6 +10,34 @@
   #:use-module (guix build-system copy))
 
 
+(define-public kibana-11.0.3
+  (package
+   (name "kibana")
+   (version "11.0.3")
+   (source (origin
+            (method url-fetch)
+            (uri "https://charts.bitnami.com/bitnami/kibana-11.0.3.tgz")
+            (sha256 #f)))
+   (build-system copy-build-system)
+   (home-page "https://bitnami.com")
+   (synopsis "Kibana is an open source, browser based analytics and search dashboard for Elasticsearch. Kibana strives to be easy to get started with, while also being flexible and powerful.")
+   (description "Kibana is an open source, browser based analytics and search dashboard for Elasticsearch. Kibana strives to be easy to get started with, while also being flexible and powerful.")
+   (license #f)))
+
+(define-public kibana-11.0.2
+  (package
+   (name "kibana")
+   (version "11.0.2")
+   (source (origin
+            (method url-fetch)
+            (uri "https://charts.bitnami.com/bitnami/kibana-11.0.2.tgz")
+            (sha256 #f)))
+   (build-system copy-build-system)
+   (home-page "https://bitnami.com")
+   (synopsis "Kibana is an open source, browser based analytics and search dashboard for Elasticsearch. Kibana strives to be easy to get started with, while also being flexible and powerful.")
+   (description "Kibana is an open source, browser based analytics and search dashboard for Elasticsearch. Kibana strives to be easy to get started with, while also being flexible and powerful.")
+   (license #f)))
+
 (define-public kibana-11.0.1
   (package
    (name "kibana")

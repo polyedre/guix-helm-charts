@@ -10,6 +10,20 @@
   #:use-module (guix build-system copy))
 
 
+(define-public tomcat-11.0.0
+  (package
+   (name "tomcat")
+   (version "11.0.0")
+   (source (origin
+            (method url-fetch)
+            (uri "https://charts.bitnami.com/bitnami/tomcat-11.0.0.tgz")
+            (sha256 #f)))
+   (build-system copy-build-system)
+   (home-page "https://bitnami.com")
+   (synopsis "Apache Tomcat is an open-source web server designed to host and run Java-based web applications. It is a lightweight server with a good performance for applications running in production environments.")
+   (description "Apache Tomcat is an open-source web server designed to host and run Java-based web applications. It is a lightweight server with a good performance for applications running in production environments.")
+   (license #f)))
+
 (define-public tomcat-10.17.2
   (package
    (name "tomcat")

@@ -1,0 +1,25 @@
+
+(define-module (helm rasooll stunnel)
+  #:use-module (guix utils)
+  #:use-module (guix gexp)
+  #:use-module (guix build utils)
+  #:use-module (json)
+  #:use-module (gnu packages base)
+  #:use-module (guix packages)
+  #:use-module (guix download)
+  #:use-module (guix build-system copy))
+
+
+(define-public stunnel-0.0.1
+  (package
+   (name "stunnel")
+   (version "0.0.1")
+   (source (origin
+            (method url-fetch)
+            (uri "https://rasooll.github.io/helm-charts/stunnel-0.0.1.tgz")
+            (sha256 #f)))
+   (build-system copy-build-system)
+   (home-page "")
+   (synopsis "A Helm chart for use stunnel client in Kubernetes")
+   (description "A Helm chart for use stunnel client in Kubernetes")
+   (license #f)))

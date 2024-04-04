@@ -10,6 +10,20 @@
   #:use-module (guix build-system copy))
 
 
+(define-public dokuwiki-16.0.0
+  (package
+   (name "dokuwiki")
+   (version "16.0.0")
+   (source (origin
+            (method url-fetch)
+            (uri "https://charts.bitnami.com/bitnami/dokuwiki-16.0.0.tgz")
+            (sha256 #f)))
+   (build-system copy-build-system)
+   (home-page "https://bitnami.com")
+   (synopsis "DokuWiki is a standards-compliant wiki optimized for creating documentation. Designed to be simple to use for small organizations, it stores all data in plain text files so no database is required.")
+   (description "DokuWiki is a standards-compliant wiki optimized for creating documentation. Designed to be simple to use for small organizations, it stores all data in plain text files so no database is required.")
+   (license #f)))
+
 (define-public dokuwiki-15.0.0
   (package
    (name "dokuwiki")

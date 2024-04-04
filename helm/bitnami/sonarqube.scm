@@ -10,6 +10,34 @@
   #:use-module (guix build-system copy))
 
 
+(define-public sonarqube-5.0.1
+  (package
+   (name "sonarqube")
+   (version "5.0.1")
+   (source (origin
+            (method url-fetch)
+            (uri "https://charts.bitnami.com/bitnami/sonarqube-5.0.1.tgz")
+            (sha256 #f)))
+   (build-system copy-build-system)
+   (home-page "https://bitnami.com")
+   (synopsis "SonarQube(TM) is an open source quality management platform that analyzes and measures code's technical quality. It enables developers to detect code issues, vulnerabilities, and bugs in early stages.")
+   (description "SonarQube(TM) is an open source quality management platform that analyzes and measures code's technical quality. It enables developers to detect code issues, vulnerabilities, and bugs in early stages.")
+   (license #f)))
+
+(define-public sonarqube-5.0.0
+  (package
+   (name "sonarqube")
+   (version "5.0.0")
+   (source (origin
+            (method url-fetch)
+            (uri "https://charts.bitnami.com/bitnami/sonarqube-5.0.0.tgz")
+            (sha256 #f)))
+   (build-system copy-build-system)
+   (home-page "https://bitnami.com")
+   (synopsis "SonarQube(TM) is an open source quality management platform that analyzes and measures code's technical quality. It enables developers to detect code issues, vulnerabilities, and bugs in early stages.")
+   (description "SonarQube(TM) is an open source quality management platform that analyzes and measures code's technical quality. It enables developers to detect code issues, vulnerabilities, and bugs in early stages.")
+   (license #f)))
+
 (define-public sonarqube-4.7.0
   (package
    (name "sonarqube")

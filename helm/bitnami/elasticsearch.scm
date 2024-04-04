@@ -10,6 +10,20 @@
   #:use-module (guix build-system copy))
 
 
+(define-public elasticsearch-20.0.2
+  (package
+   (name "elasticsearch")
+   (version "20.0.2")
+   (source (origin
+            (method url-fetch)
+            (uri "https://charts.bitnami.com/bitnami/elasticsearch-20.0.2.tgz")
+            (sha256 #f)))
+   (build-system copy-build-system)
+   (home-page "https://bitnami.com")
+   (synopsis "Elasticsearch is a distributed search and analytics engine. It is used for web search, log monitoring, and real-time analytics. Ideal for Big Data applications.")
+   (description "Elasticsearch is a distributed search and analytics engine. It is used for web search, log monitoring, and real-time analytics. Ideal for Big Data applications.")
+   (license #f)))
+
 (define-public elasticsearch-20.0.1
   (package
    (name "elasticsearch")

@@ -10,6 +10,20 @@
   #:use-module (guix build-system copy))
 
 
+(define-public harbor-21.0.0
+  (package
+   (name "harbor")
+   (version "21.0.0")
+   (source (origin
+            (method url-fetch)
+            (uri "https://charts.bitnami.com/bitnami/harbor-21.0.0.tgz")
+            (sha256 #f)))
+   (build-system copy-build-system)
+   (home-page "https://bitnami.com")
+   (synopsis "Harbor is an open source trusted cloud-native registry to store, sign, and scan content. It adds functionalities like security, identity, and management to the open source Docker distribution.")
+   (description "Harbor is an open source trusted cloud-native registry to store, sign, and scan content. It adds functionalities like security, identity, and management to the open source Docker distribution.")
+   (license #f)))
+
 (define-public harbor-20.1.3
   (package
    (name "harbor")

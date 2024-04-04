@@ -10,6 +10,20 @@
   #:use-module (guix build-system copy))
 
 
+(define-public consul-11.0.2
+  (package
+   (name "consul")
+   (version "11.0.2")
+   (source (origin
+            (method url-fetch)
+            (uri "https://charts.bitnami.com/bitnami/consul-11.0.2.tgz")
+            (sha256 #f)))
+   (build-system copy-build-system)
+   (home-page "https://bitnami.com")
+   (synopsis "HashiCorp Consul is a tool for discovering and configuring services in your infrastructure.")
+   (description "HashiCorp Consul is a tool for discovering and configuring services in your infrastructure.")
+   (license #f)))
+
 (define-public consul-11.0.1
   (package
    (name "consul")

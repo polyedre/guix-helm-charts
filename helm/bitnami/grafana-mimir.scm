@@ -10,6 +10,20 @@
   #:use-module (guix build-system copy))
 
 
+(define-public grafana-mimir-1.0.1
+  (package
+   (name "grafana-mimir")
+   (version "1.0.1")
+   (source (origin
+            (method url-fetch)
+            (uri "https://charts.bitnami.com/bitnami/grafana-mimir-1.0.1.tgz")
+            (sha256 #f)))
+   (build-system copy-build-system)
+   (home-page "https://bitnami.com")
+   (synopsis "Grafana Mimir is an open source, horizontally scalable, highly available, multi-tenant, long-term storage for Prometheus.")
+   (description "Grafana Mimir is an open source, horizontally scalable, highly available, multi-tenant, long-term storage for Prometheus.")
+   (license #f)))
+
 (define-public grafana-mimir-1.0.0
   (package
    (name "grafana-mimir")

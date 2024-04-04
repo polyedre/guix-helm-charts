@@ -10,6 +10,34 @@
   #:use-module (guix build-system copy))
 
 
+(define-public moodle-21.0.0
+  (package
+   (name "moodle")
+   (version "21.0.0")
+   (source (origin
+            (method url-fetch)
+            (uri "https://charts.bitnami.com/bitnami/moodle-21.0.0.tgz")
+            (sha256 #f)))
+   (build-system copy-build-system)
+   (home-page "https://bitnami.com")
+   (synopsis "Moodle(TM) LMS is an open source online Learning Management System widely used at universities, schools, and corporations. It is modular and highly adaptable to any type of online learning.")
+   (description "Moodle(TM) LMS is an open source online Learning Management System widely used at universities, schools, and corporations. It is modular and highly adaptable to any type of online learning.")
+   (license #f)))
+
+(define-public moodle-20.5.1
+  (package
+   (name "moodle")
+   (version "20.5.1")
+   (source (origin
+            (method url-fetch)
+            (uri "https://charts.bitnami.com/bitnami/moodle-20.5.1.tgz")
+            (sha256 #f)))
+   (build-system copy-build-system)
+   (home-page "https://bitnami.com")
+   (synopsis "Moodle(TM) LMS is an open source online Learning Management System widely used at universities, schools, and corporations. It is modular and highly adaptable to any type of online learning.")
+   (description "Moodle(TM) LMS is an open source online Learning Management System widely used at universities, schools, and corporations. It is modular and highly adaptable to any type of online learning.")
+   (license #f)))
+
 (define-public moodle-20.5.0
   (package
    (name "moodle")

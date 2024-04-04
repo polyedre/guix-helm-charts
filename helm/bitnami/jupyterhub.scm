@@ -10,6 +10,20 @@
   #:use-module (guix build-system copy))
 
 
+(define-public jupyterhub-7.0.0
+  (package
+   (name "jupyterhub")
+   (version "7.0.0")
+   (source (origin
+            (method url-fetch)
+            (uri "https://charts.bitnami.com/bitnami/jupyterhub-7.0.0.tgz")
+            (sha256 #f)))
+   (build-system copy-build-system)
+   (home-page "https://bitnami.com")
+   (synopsis "JupyterHub brings the power of notebooks to groups of users. It gives users access to computational environments and resources without burdening the users with installation and maintenance tasks.")
+   (description "JupyterHub brings the power of notebooks to groups of users. It gives users access to computational environments and resources without burdening the users with installation and maintenance tasks.")
+   (license #f)))
+
 (define-public jupyterhub-6.1.4
   (package
    (name "jupyterhub")

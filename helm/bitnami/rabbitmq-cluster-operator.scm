@@ -10,6 +10,34 @@
   #:use-module (guix build-system copy))
 
 
+(define-public rabbitmq-cluster-operator-4.2.1
+  (package
+   (name "rabbitmq-cluster-operator")
+   (version "4.2.1")
+   (source (origin
+            (method url-fetch)
+            (uri "https://charts.bitnami.com/bitnami/rabbitmq-cluster-operator-4.2.1.tgz")
+            (sha256 #f)))
+   (build-system copy-build-system)
+   (home-page "https://bitnami.com")
+   (synopsis "The RabbitMQ Cluster Kubernetes Operator automates provisioning, management, and operations of RabbitMQ clusters running on Kubernetes.")
+   (description "The RabbitMQ Cluster Kubernetes Operator automates provisioning, management, and operations of RabbitMQ clusters running on Kubernetes.")
+   (license #f)))
+
+(define-public rabbitmq-cluster-operator-4.2.0
+  (package
+   (name "rabbitmq-cluster-operator")
+   (version "4.2.0")
+   (source (origin
+            (method url-fetch)
+            (uri "https://charts.bitnami.com/bitnami/rabbitmq-cluster-operator-4.2.0.tgz")
+            (sha256 #f)))
+   (build-system copy-build-system)
+   (home-page "https://bitnami.com")
+   (synopsis "The RabbitMQ Cluster Kubernetes Operator automates provisioning, management, and operations of RabbitMQ clusters running on Kubernetes.")
+   (description "The RabbitMQ Cluster Kubernetes Operator automates provisioning, management, and operations of RabbitMQ clusters running on Kubernetes.")
+   (license #f)))
+
 (define-public rabbitmq-cluster-operator-4.1.0
   (package
    (name "rabbitmq-cluster-operator")

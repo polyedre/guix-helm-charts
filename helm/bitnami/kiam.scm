@@ -10,6 +10,20 @@
   #:use-module (guix build-system copy))
 
 
+(define-public kiam-2.0.1
+  (package
+   (name "kiam")
+   (version "2.0.1")
+   (source (origin
+            (method url-fetch)
+            (uri "https://charts.bitnami.com/bitnami/kiam-2.0.1.tgz")
+            (sha256 #f)))
+   (build-system copy-build-system)
+   (home-page "https://bitnami.com")
+   (synopsis "kiam is a proxy that captures AWS Metadata API requests. It allows AWS IAM roles to be set for Kubernetes workloads.")
+   (description "kiam is a proxy that captures AWS Metadata API requests. It allows AWS IAM roles to be set for Kubernetes workloads.")
+   (license #f)))
+
 (define-public kiam-2.0.0
   (package
    (name "kiam")

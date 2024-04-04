@@ -10,6 +10,20 @@
   #:use-module (guix build-system copy))
 
 
+(define-public zookeeper-13.1.0
+  (package
+   (name "zookeeper")
+   (version "13.1.0")
+   (source (origin
+            (method url-fetch)
+            (uri "https://charts.bitnami.com/bitnami/zookeeper-13.1.0.tgz")
+            (sha256 #f)))
+   (build-system copy-build-system)
+   (home-page "https://bitnami.com")
+   (synopsis "Apache ZooKeeper provides a reliable, centralized register of configuration data and services for distributed applications.")
+   (description "Apache ZooKeeper provides a reliable, centralized register of configuration data and services for distributed applications.")
+   (license #f)))
+
 (define-public zookeeper-13.0.1
   (package
    (name "zookeeper")

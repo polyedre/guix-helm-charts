@@ -1,0 +1,417 @@
+
+(define-module (helm gabe565 rsshub)
+  #:use-module (guix utils)
+  #:use-module (guix gexp)
+  #:use-module (guix build utils)
+  #:use-module (json)
+  #:use-module (gnu packages base)
+  #:use-module (guix packages)
+  #:use-module (guix download)
+  #:use-module (guix build-system copy))
+
+
+(define-public rsshub-0.6.0
+  (package
+   (name "rsshub")
+   (version "0.6.0")
+   (source (origin
+            (method url-fetch)
+            (uri "https://github.com/gabe565/charts/releases/download/rsshub-0.6.0/rsshub-0.6.0.tgz")
+            (sha256 #f)))
+   (build-system copy-build-system)
+   (home-page "https://charts.gabe565.com/charts/rsshub/")
+   (synopsis "RSSHub is an open source, easy to use, and extensible RSS feed generator. It's capable of generating RSS feeds from pretty much everything.")
+   (description "RSSHub is an open source, easy to use, and extensible RSS feed generator. It's capable of generating RSS feeds from pretty much everything.")
+   (license #f)))
+
+(define-public rsshub-0.5.3
+  (package
+   (name "rsshub")
+   (version "0.5.3")
+   (source (origin
+            (method url-fetch)
+            (uri "https://github.com/gabe565/charts/releases/download/rsshub-0.5.3/rsshub-0.5.3.tgz")
+            (sha256 #f)))
+   (build-system copy-build-system)
+   (home-page "https://charts.gabe565.com/charts/rsshub/")
+   (synopsis "RSSHub is an open source, easy to use, and extensible RSS feed generator. It's capable of generating RSS feeds from pretty much everything.")
+   (description "RSSHub is an open source, easy to use, and extensible RSS feed generator. It's capable of generating RSS feeds from pretty much everything.")
+   (license #f)))
+
+(define-public rsshub-0.5.2
+  (package
+   (name "rsshub")
+   (version "0.5.2")
+   (source (origin
+            (method url-fetch)
+            (uri "https://github.com/gabe565/charts/releases/download/rsshub-0.5.2/rsshub-0.5.2.tgz")
+            (sha256 #f)))
+   (build-system copy-build-system)
+   (home-page "https://charts.gabe565.com/charts/rsshub/")
+   (synopsis "RSSHub is an open source, easy to use, and extensible RSS feed generator. It's capable of generating RSS feeds from pretty much everything.")
+   (description "RSSHub is an open source, easy to use, and extensible RSS feed generator. It's capable of generating RSS feeds from pretty much everything.")
+   (license #f)))
+
+(define-public rsshub-0.5.1
+  (package
+   (name "rsshub")
+   (version "0.5.1")
+   (source (origin
+            (method url-fetch)
+            (uri "https://github.com/gabe565/charts/releases/download/rsshub-0.5.1/rsshub-0.5.1.tgz")
+            (sha256 #f)))
+   (build-system copy-build-system)
+   (home-page "https://charts.gabe565.com/charts/rsshub/")
+   (synopsis "RSSHub is an open source, easy to use, and extensible RSS feed generator. It's capable of generating RSS feeds from pretty much everything.")
+   (description "RSSHub is an open source, easy to use, and extensible RSS feed generator. It's capable of generating RSS feeds from pretty much everything.")
+   (license #f)))
+
+(define-public rsshub-0.5.0
+  (package
+   (name "rsshub")
+   (version "0.5.0")
+   (source (origin
+            (method url-fetch)
+            (uri "https://github.com/gabe565/charts/releases/download/rsshub-0.5.0/rsshub-0.5.0.tgz")
+            (sha256 #f)))
+   (build-system copy-build-system)
+   (home-page "https://charts.gabe565.com/charts/rsshub/")
+   (synopsis "RSSHub is an open source, easy to use, and extensible RSS feed generator. It's capable of generating RSS feeds from pretty much everything.")
+   (description "RSSHub is an open source, easy to use, and extensible RSS feed generator. It's capable of generating RSS feeds from pretty much everything.")
+   (license #f)))
+
+(define-public rsshub-0.4.0
+  (package
+   (name "rsshub")
+   (version "0.4.0")
+   (source (origin
+            (method url-fetch)
+            (uri "https://github.com/gabe565/charts/releases/download/rsshub-0.4.0/rsshub-0.4.0.tgz")
+            (sha256 #f)))
+   (build-system copy-build-system)
+   (home-page "https://charts.gabe565.com/charts/rsshub/")
+   (synopsis "RSSHub is an open source, easy to use, and extensible RSS feed generator. It's capable of generating RSS feeds from pretty much everything.")
+   (description "RSSHub is an open source, easy to use, and extensible RSS feed generator. It's capable of generating RSS feeds from pretty much everything.")
+   (license #f)))
+
+(define-public rsshub-0.3.7
+  (package
+   (name "rsshub")
+   (version "0.3.7")
+   (source (origin
+            (method url-fetch)
+            (uri "https://github.com/gabe565/charts/releases/download/rsshub-0.3.7/rsshub-0.3.7.tgz")
+            (sha256 #f)))
+   (build-system copy-build-system)
+   (home-page "https://charts.gabe565.com/charts/rsshub")
+   (synopsis "RSSHub is an open source, easy to use, and extensible RSS feed generator. It's capable of generating RSS feeds from pretty much everything.")
+   (description "RSSHub is an open source, easy to use, and extensible RSS feed generator. It's capable of generating RSS feeds from pretty much everything.")
+   (license #f)))
+
+(define-public rsshub-0.3.6
+  (package
+   (name "rsshub")
+   (version "0.3.6")
+   (source (origin
+            (method url-fetch)
+            (uri "https://github.com/gabe565/charts/releases/download/rsshub-0.3.6/rsshub-0.3.6.tgz")
+            (sha256 #f)))
+   (build-system copy-build-system)
+   (home-page "https://charts.gabe565.com/charts/rsshub")
+   (synopsis "RSSHub is an open source, easy to use, and extensible RSS feed generator. It's capable of generating RSS feeds from pretty much everything.")
+   (description "RSSHub is an open source, easy to use, and extensible RSS feed generator. It's capable of generating RSS feeds from pretty much everything.")
+   (license #f)))
+
+(define-public rsshub-0.3.5
+  (package
+   (name "rsshub")
+   (version "0.3.5")
+   (source (origin
+            (method url-fetch)
+            (uri "https://github.com/gabe565/charts/releases/download/rsshub-0.3.5/rsshub-0.3.5.tgz")
+            (sha256 #f)))
+   (build-system copy-build-system)
+   (home-page "https://charts.gabe565.com/charts/rsshub")
+   (synopsis "RSSHub is an open source, easy to use, and extensible RSS feed generator. It's capable of generating RSS feeds from pretty much everything.")
+   (description "RSSHub is an open source, easy to use, and extensible RSS feed generator. It's capable of generating RSS feeds from pretty much everything.")
+   (license #f)))
+
+(define-public rsshub-0.3.4
+  (package
+   (name "rsshub")
+   (version "0.3.4")
+   (source (origin
+            (method url-fetch)
+            (uri "https://github.com/gabe565/charts/releases/download/rsshub-0.3.4/rsshub-0.3.4.tgz")
+            (sha256 #f)))
+   (build-system copy-build-system)
+   (home-page "https://charts.gabe565.com/charts/rsshub")
+   (synopsis "RSSHub is an open source, easy to use, and extensible RSS feed generator. It's capable of generating RSS feeds from pretty much everything.")
+   (description "RSSHub is an open source, easy to use, and extensible RSS feed generator. It's capable of generating RSS feeds from pretty much everything.")
+   (license #f)))
+
+(define-public rsshub-0.3.3
+  (package
+   (name "rsshub")
+   (version "0.3.3")
+   (source (origin
+            (method url-fetch)
+            (uri "https://github.com/gabe565/charts/releases/download/rsshub-0.3.3/rsshub-0.3.3.tgz")
+            (sha256 #f)))
+   (build-system copy-build-system)
+   (home-page "https://charts.gabe565.com/charts/rsshub")
+   (synopsis "RSSHub is an open source, easy to use, and extensible RSS feed generator. It's capable of generating RSS feeds from pretty much everything.")
+   (description "RSSHub is an open source, easy to use, and extensible RSS feed generator. It's capable of generating RSS feeds from pretty much everything.")
+   (license #f)))
+
+(define-public rsshub-0.3.2
+  (package
+   (name "rsshub")
+   (version "0.3.2")
+   (source (origin
+            (method url-fetch)
+            (uri "https://github.com/gabe565/charts/releases/download/rsshub-0.3.2/rsshub-0.3.2.tgz")
+            (sha256 #f)))
+   (build-system copy-build-system)
+   (home-page "https://charts.gabe565.com/charts/rsshub")
+   (synopsis "RSSHub is an open source, easy to use, and extensible RSS feed generator. It's capable of generating RSS feeds from pretty much everything.")
+   (description "RSSHub is an open source, easy to use, and extensible RSS feed generator. It's capable of generating RSS feeds from pretty much everything.")
+   (license #f)))
+
+(define-public rsshub-0.3.1
+  (package
+   (name "rsshub")
+   (version "0.3.1")
+   (source (origin
+            (method url-fetch)
+            (uri "https://github.com/gabe565/charts/releases/download/rsshub-0.3.1/rsshub-0.3.1.tgz")
+            (sha256 #f)))
+   (build-system copy-build-system)
+   (home-page "https://charts.gabe565.com/charts/rsshub")
+   (synopsis "RSSHub is an open source, easy to use, and extensible RSS feed generator. It's capable of generating RSS feeds from pretty much everything.")
+   (description "RSSHub is an open source, easy to use, and extensible RSS feed generator. It's capable of generating RSS feeds from pretty much everything.")
+   (license #f)))
+
+(define-public rsshub-0.3.0
+  (package
+   (name "rsshub")
+   (version "0.3.0")
+   (source (origin
+            (method url-fetch)
+            (uri "https://github.com/gabe565/charts/releases/download/rsshub-0.3.0/rsshub-0.3.0.tgz")
+            (sha256 #f)))
+   (build-system copy-build-system)
+   (home-page "https://charts.gabe565.com/charts/rsshub")
+   (synopsis "RSSHub is an open source, easy to use, and extensible RSS feed generator. It's capable of generating RSS feeds from pretty much everything.")
+   (description "RSSHub is an open source, easy to use, and extensible RSS feed generator. It's capable of generating RSS feeds from pretty much everything.")
+   (license #f)))
+
+(define-public rsshub-0.2.3
+  (package
+   (name "rsshub")
+   (version "0.2.3")
+   (source (origin
+            (method url-fetch)
+            (uri "https://github.com/gabe565/charts/releases/download/rsshub-0.2.3/rsshub-0.2.3.tgz")
+            (sha256 #f)))
+   (build-system copy-build-system)
+   (home-page "https://charts.gabe565.com/charts/rsshub")
+   (synopsis "RSSHub is an open source, easy to use, and extensible RSS feed generator. It's capable of generating RSS feeds from pretty much everything.")
+   (description "RSSHub is an open source, easy to use, and extensible RSS feed generator. It's capable of generating RSS feeds from pretty much everything.")
+   (license #f)))
+
+(define-public rsshub-0.2.2
+  (package
+   (name "rsshub")
+   (version "0.2.2")
+   (source (origin
+            (method url-fetch)
+            (uri "https://github.com/gabe565/charts/releases/download/rsshub-0.2.2/rsshub-0.2.2.tgz")
+            (sha256 #f)))
+   (build-system copy-build-system)
+   (home-page "https://github.com/gabe565/charts/tree/main/charts/rsshub")
+   (synopsis "RSSHub is an open source, easy to use, and extensible RSS feed generator. It's capable of generating RSS feeds from pretty much everything.")
+   (description "RSSHub is an open source, easy to use, and extensible RSS feed generator. It's capable of generating RSS feeds from pretty much everything.")
+   (license #f)))
+
+(define-public rsshub-0.2.1
+  (package
+   (name "rsshub")
+   (version "0.2.1")
+   (source (origin
+            (method url-fetch)
+            (uri "https://github.com/gabe565/charts/releases/download/rsshub-0.2.1/rsshub-0.2.1.tgz")
+            (sha256 #f)))
+   (build-system copy-build-system)
+   (home-page "https://github.com/gabe565/charts/tree/main/charts/rsshub")
+   (synopsis "RSSHub is an open source, easy to use, and extensible RSS feed generator. It's capable of generating RSS feeds from pretty much everything.")
+   (description "RSSHub is an open source, easy to use, and extensible RSS feed generator. It's capable of generating RSS feeds from pretty much everything.")
+   (license #f)))
+
+(define-public rsshub-0.2.0
+  (package
+   (name "rsshub")
+   (version "0.2.0")
+   (source (origin
+            (method url-fetch)
+            (uri "https://github.com/gabe565/charts/releases/download/rsshub-0.2.0/rsshub-0.2.0.tgz")
+            (sha256 #f)))
+   (build-system copy-build-system)
+   (home-page "https://github.com/gabe565/charts/tree/main/charts/rsshub")
+   (synopsis "RSSHub is an open source, easy to use, and extensible RSS feed generator. It's capable of generating RSS feeds from pretty much everything.")
+   (description "RSSHub is an open source, easy to use, and extensible RSS feed generator. It's capable of generating RSS feeds from pretty much everything.")
+   (license #f)))
+
+(define-public rsshub-0.1.10
+  (package
+   (name "rsshub")
+   (version "0.1.10")
+   (source (origin
+            (method url-fetch)
+            (uri "https://github.com/gabe565/charts/releases/download/rsshub-0.1.10/rsshub-0.1.10.tgz")
+            (sha256 #f)))
+   (build-system copy-build-system)
+   (home-page "https://github.com/gabe565/charts/tree/main/charts/rsshub")
+   (synopsis "RSSHub is an open source, easy to use, and extensible RSS feed generator. It's capable of generating RSS feeds from pretty much everything.")
+   (description "RSSHub is an open source, easy to use, and extensible RSS feed generator. It's capable of generating RSS feeds from pretty much everything.")
+   (license #f)))
+
+(define-public rsshub-0.1.9
+  (package
+   (name "rsshub")
+   (version "0.1.9")
+   (source (origin
+            (method url-fetch)
+            (uri "https://github.com/gabe565/charts/releases/download/rsshub-0.1.9/rsshub-0.1.9.tgz")
+            (sha256 #f)))
+   (build-system copy-build-system)
+   (home-page "")
+   (synopsis "RSSHub is an open source, easy to use, and extensible RSS feed generator. It's capable of generating RSS feeds from pretty much everything.")
+   (description "RSSHub is an open source, easy to use, and extensible RSS feed generator. It's capable of generating RSS feeds from pretty much everything.")
+   (license #f)))
+
+(define-public rsshub-0.1.8
+  (package
+   (name "rsshub")
+   (version "0.1.8")
+   (source (origin
+            (method url-fetch)
+            (uri "https://github.com/gabe565/charts/releases/download/rsshub-0.1.8/rsshub-0.1.8.tgz")
+            (sha256 #f)))
+   (build-system copy-build-system)
+   (home-page "")
+   (synopsis "RSSHub is an open source, easy to use, and extensible RSS feed generator. It's capable of generating RSS feeds from pretty much everything.")
+   (description "RSSHub is an open source, easy to use, and extensible RSS feed generator. It's capable of generating RSS feeds from pretty much everything.")
+   (license #f)))
+
+(define-public rsshub-0.1.7
+  (package
+   (name "rsshub")
+   (version "0.1.7")
+   (source (origin
+            (method url-fetch)
+            (uri "https://github.com/gabe565/charts/releases/download/rsshub-0.1.7/rsshub-0.1.7.tgz")
+            (sha256 #f)))
+   (build-system copy-build-system)
+   (home-page "")
+   (synopsis "RSSHub is an open source, easy to use, and extensible RSS feed generator. It's capable of generating RSS feeds from pretty much everything.")
+   (description "RSSHub is an open source, easy to use, and extensible RSS feed generator. It's capable of generating RSS feeds from pretty much everything.")
+   (license #f)))
+
+(define-public rsshub-0.1.6
+  (package
+   (name "rsshub")
+   (version "0.1.6")
+   (source (origin
+            (method url-fetch)
+            (uri "https://github.com/gabe565/charts/releases/download/rsshub-0.1.6/rsshub-0.1.6.tgz")
+            (sha256 #f)))
+   (build-system copy-build-system)
+   (home-page "")
+   (synopsis "RSSHub is an open source, easy to use, and extensible RSS feed generator. It's capable of generating RSS feeds from pretty much everything.")
+   (description "RSSHub is an open source, easy to use, and extensible RSS feed generator. It's capable of generating RSS feeds from pretty much everything.")
+   (license #f)))
+
+(define-public rsshub-0.1.5
+  (package
+   (name "rsshub")
+   (version "0.1.5")
+   (source (origin
+            (method url-fetch)
+            (uri "https://github.com/gabe565/charts/releases/download/rsshub-0.1.5/rsshub-0.1.5.tgz")
+            (sha256 #f)))
+   (build-system copy-build-system)
+   (home-page "")
+   (synopsis "RSSHub is an open source, easy to use, and extensible RSS feed generator. It's capable of generating RSS feeds from pretty much everything.")
+   (description "RSSHub is an open source, easy to use, and extensible RSS feed generator. It's capable of generating RSS feeds from pretty much everything.")
+   (license #f)))
+
+(define-public rsshub-0.1.4
+  (package
+   (name "rsshub")
+   (version "0.1.4")
+   (source (origin
+            (method url-fetch)
+            (uri "https://github.com/gabe565/charts/releases/download/rsshub-0.1.4/rsshub-0.1.4.tgz")
+            (sha256 #f)))
+   (build-system copy-build-system)
+   (home-page "")
+   (synopsis "RSSHub is an open source, easy to use, and extensible RSS feed generator. It's capable of generating RSS feeds from pretty much everything.")
+   (description "RSSHub is an open source, easy to use, and extensible RSS feed generator. It's capable of generating RSS feeds from pretty much everything.")
+   (license #f)))
+
+(define-public rsshub-0.1.3
+  (package
+   (name "rsshub")
+   (version "0.1.3")
+   (source (origin
+            (method url-fetch)
+            (uri "https://github.com/gabe565/charts/releases/download/rsshub-0.1.3/rsshub-0.1.3.tgz")
+            (sha256 #f)))
+   (build-system copy-build-system)
+   (home-page "")
+   (synopsis "RSSHub is an open source, easy to use, and extensible RSS feed generator. It's capable of generating RSS feeds from pretty much everything.")
+   (description "RSSHub is an open source, easy to use, and extensible RSS feed generator. It's capable of generating RSS feeds from pretty much everything.")
+   (license #f)))
+
+(define-public rsshub-0.1.2
+  (package
+   (name "rsshub")
+   (version "0.1.2")
+   (source (origin
+            (method url-fetch)
+            (uri "https://github.com/gabe565/charts/releases/download/rsshub-0.1.2/rsshub-0.1.2.tgz")
+            (sha256 #f)))
+   (build-system copy-build-system)
+   (home-page "")
+   (synopsis "RSSHub is an open source, easy to use, and extensible RSS feed generator. It's capable of generating RSS feeds from pretty much everything.")
+   (description "RSSHub is an open source, easy to use, and extensible RSS feed generator. It's capable of generating RSS feeds from pretty much everything.")
+   (license #f)))
+
+(define-public rsshub-0.1.1
+  (package
+   (name "rsshub")
+   (version "0.1.1")
+   (source (origin
+            (method url-fetch)
+            (uri "https://github.com/gabe565/charts/releases/download/rsshub-0.1.1/rsshub-0.1.1.tgz")
+            (sha256 #f)))
+   (build-system copy-build-system)
+   (home-page "")
+   (synopsis "RSSHub is an open source, easy to use, and extensible RSS feed generator. It's capable of generating RSS feeds from pretty much everything.")
+   (description "RSSHub is an open source, easy to use, and extensible RSS feed generator. It's capable of generating RSS feeds from pretty much everything.")
+   (license #f)))
+
+(define-public rsshub-0.1.0
+  (package
+   (name "rsshub")
+   (version "0.1.0")
+   (source (origin
+            (method url-fetch)
+            (uri "https://github.com/gabe565/charts/releases/download/rsshub-0.1.0/rsshub-0.1.0.tgz")
+            (sha256 #f)))
+   (build-system copy-build-system)
+   (home-page "")
+   (synopsis "RSSHub is an open source, easy to use, and extensible RSS feed generator. It's capable of generating RSS feeds from pretty much everything.")
+   (description "RSSHub is an open source, easy to use, and extensible RSS feed generator. It's capable of generating RSS feeds from pretty much everything.")
+   (license #f)))

@@ -10,6 +10,20 @@
   #:use-module (guix build-system copy))
 
 
+(define-public argo-cd-6.0.2
+  (package
+   (name "argo-cd")
+   (version "6.0.2")
+   (source (origin
+            (method url-fetch)
+            (uri "https://charts.bitnami.com/bitnami/argo-cd-6.0.2.tgz")
+            (sha256 #f)))
+   (build-system copy-build-system)
+   (home-page "https://bitnami.com")
+   (synopsis "Argo CD is a continuous delivery tool for Kubernetes based on GitOps.")
+   (description "Argo CD is a continuous delivery tool for Kubernetes based on GitOps.")
+   (license #f)))
+
 (define-public argo-cd-6.0.1
   (package
    (name "argo-cd")

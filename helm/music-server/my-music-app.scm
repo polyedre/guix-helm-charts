@@ -1,0 +1,39 @@
+
+(define-module (helm music-server my-music-app)
+  #:use-module (guix utils)
+  #:use-module (guix gexp)
+  #:use-module (guix build utils)
+  #:use-module (json)
+  #:use-module (gnu packages base)
+  #:use-module (guix packages)
+  #:use-module (guix download)
+  #:use-module (guix build-system copy))
+
+
+(define-public my-music-app-0.1.1
+  (package
+   (name "my-music-app")
+   (version "0.1.1")
+   (source (origin
+            (method url-fetch)
+            (uri "https://github.com/Awan/helm/releases/download/my-music-app-0.1.1/my-music-app-0.1.1.tgz")
+            (sha256 #f)))
+   (build-system copy-build-system)
+   (home-page "")
+   (synopsis "Play a http stream with mpd")
+   (description "Play a http stream with mpd")
+   (license #f)))
+
+(define-public my-music-app-0.1.0
+  (package
+   (name "my-music-app")
+   (version "0.1.0")
+   (source (origin
+            (method url-fetch)
+            (uri "https://awan.github.io/helm/charts/my-music-app/my-music-app-0.1.0.tgz")
+            (sha256 #f)))
+   (build-system copy-build-system)
+   (home-page "")
+   (synopsis "A Helm chart for Kubernetes")
+   (description "A Helm chart for Kubernetes")
+   (license #f)))

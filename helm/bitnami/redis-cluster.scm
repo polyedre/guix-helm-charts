@@ -10,6 +10,20 @@
   #:use-module (guix build-system copy))
 
 
+(define-public redis-cluster-10.0.1
+  (package
+   (name "redis-cluster")
+   (version "10.0.1")
+   (source (origin
+            (method url-fetch)
+            (uri "https://charts.bitnami.com/bitnami/redis-cluster-10.0.1.tgz")
+            (sha256 #f)))
+   (build-system copy-build-system)
+   (home-page "https://bitnami.com")
+   (synopsis "Redis(R) is an open source, scalable, distributed in-memory cache for applications. It can be used to store and serve data in the form of strings, hashes, lists, sets and sorted sets.")
+   (description "Redis(R) is an open source, scalable, distributed in-memory cache for applications. It can be used to store and serve data in the form of strings, hashes, lists, sets and sorted sets.")
+   (license #f)))
+
 (define-public redis-cluster-10.0.0
   (package
    (name "redis-cluster")

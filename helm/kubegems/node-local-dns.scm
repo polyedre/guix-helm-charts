@@ -1,0 +1,39 @@
+
+(define-module (helm kubegems node-local-dns)
+  #:use-module (guix utils)
+  #:use-module (guix gexp)
+  #:use-module (guix build utils)
+  #:use-module (json)
+  #:use-module (gnu packages base)
+  #:use-module (guix packages)
+  #:use-module (guix download)
+  #:use-module (guix build-system copy))
+
+
+(define-public node-local-dns-0.2.1
+  (package
+   (name "node-local-dns")
+   (version "0.2.1")
+   (source (origin
+            (method url-fetch)
+            (uri "https://charts.kubegems.io/kubegems/charts/node-local-dns-0.2.1.tgz")
+            (sha256 #f)))
+   (build-system copy-build-system)
+   (home-page "")
+   (synopsis "Kubernetes 集群下的DNS缓存代理服务，用户提高集群下DNS性能(IPVS模式)")
+   (description "Kubernetes 集群下的DNS缓存代理服务，用户提高集群下DNS性能(IPVS模式)")
+   (license #f)))
+
+(define-public node-local-dns-0.1.1
+  (package
+   (name "node-local-dns")
+   (version "0.1.1")
+   (source (origin
+            (method url-fetch)
+            (uri "https://charts.kubegems.io/kubegems/charts/node-local-dns-0.1.1.tgz")
+            (sha256 #f)))
+   (build-system copy-build-system)
+   (home-page "")
+   (synopsis "Kubernetes 集群下的DNS缓存代理服务，用户提高集群下DNS性能(IPVS模式)")
+   (description "Kubernetes 集群下的DNS缓存代理服务，用户提高集群下DNS性能(IPVS模式)")
+   (license #f)))

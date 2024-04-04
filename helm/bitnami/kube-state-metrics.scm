@@ -10,6 +10,34 @@
   #:use-module (guix build-system copy))
 
 
+(define-public kube-state-metrics-4.0.2
+  (package
+   (name "kube-state-metrics")
+   (version "4.0.2")
+   (source (origin
+            (method url-fetch)
+            (uri "https://charts.bitnami.com/bitnami/kube-state-metrics-4.0.2.tgz")
+            (sha256 #f)))
+   (build-system copy-build-system)
+   (home-page "https://bitnami.com")
+   (synopsis "kube-state-metrics is a simple service that listens to the Kubernetes API server and generates metrics about the state of the objects.")
+   (description "kube-state-metrics is a simple service that listens to the Kubernetes API server and generates metrics about the state of the objects.")
+   (license #f)))
+
+(define-public kube-state-metrics-4.0.1
+  (package
+   (name "kube-state-metrics")
+   (version "4.0.1")
+   (source (origin
+            (method url-fetch)
+            (uri "https://charts.bitnami.com/bitnami/kube-state-metrics-4.0.1.tgz")
+            (sha256 #f)))
+   (build-system copy-build-system)
+   (home-page "https://bitnami.com")
+   (synopsis "kube-state-metrics is a simple service that listens to the Kubernetes API server and generates metrics about the state of the objects.")
+   (description "kube-state-metrics is a simple service that listens to the Kubernetes API server and generates metrics about the state of the objects.")
+   (license #f)))
+
 (define-public kube-state-metrics-4.0.0
   (package
    (name "kube-state-metrics")

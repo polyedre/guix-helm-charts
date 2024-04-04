@@ -1,0 +1,25 @@
+
+(define-module (helm sistas-chatbot sistas-chatbot)
+  #:use-module (guix utils)
+  #:use-module (guix gexp)
+  #:use-module (guix build utils)
+  #:use-module (json)
+  #:use-module (gnu packages base)
+  #:use-module (guix packages)
+  #:use-module (guix download)
+  #:use-module (guix build-system copy))
+
+
+(define-public sistas-chatbot-4.0.0
+  (package
+   (name "sistas-chatbot")
+   (version "4.0.0")
+   (source (origin
+            (method url-fetch)
+            (uri "https://sistasyazilimgrubu.github.io/SistasChatbot/charts//apps/sistas-chatbot-4.0.0.tgz")
+            (sha256 #f)))
+   (build-system copy-build-system)
+   (home-page "")
+   (synopsis "sistas-chatbot")
+   (description "sistas-chatbot")
+   (license #f)))

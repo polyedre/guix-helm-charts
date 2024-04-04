@@ -10,6 +10,20 @@
   #:use-module (guix build-system copy))
 
 
+(define-public wildfly-19.0.0
+  (package
+   (name "wildfly")
+   (version "19.0.0")
+   (source (origin
+            (method url-fetch)
+            (uri "https://charts.bitnami.com/bitnami/wildfly-19.0.0.tgz")
+            (sha256 #f)))
+   (build-system copy-build-system)
+   (home-page "https://bitnami.com")
+   (synopsis "Wildfly is a lightweight, open source application server, formerly known as JBoss, that implements the latest enterprise Java standards.")
+   (description "Wildfly is a lightweight, open source application server, formerly known as JBoss, that implements the latest enterprise Java standards.")
+   (license #f)))
+
 (define-public wildfly-18.4.2
   (package
    (name "wildfly")

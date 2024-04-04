@@ -10,6 +10,20 @@
   #:use-module (guix build-system copy))
 
 
+(define-public kafka-28.0.1
+  (package
+   (name "kafka")
+   (version "28.0.1")
+   (source (origin
+            (method url-fetch)
+            (uri "https://charts.bitnami.com/bitnami/kafka-28.0.1.tgz")
+            (sha256 #f)))
+   (build-system copy-build-system)
+   (home-page "https://bitnami.com")
+   (synopsis "Apache Kafka is a distributed streaming platform designed to build real-time pipelines and can be used as a message broker or as a replacement for a log aggregation solution for big data applications.")
+   (description "Apache Kafka is a distributed streaming platform designed to build real-time pipelines and can be used as a message broker or as a replacement for a log aggregation solution for big data applications.")
+   (license #f)))
+
 (define-public kafka-28.0.0
   (package
    (name "kafka")

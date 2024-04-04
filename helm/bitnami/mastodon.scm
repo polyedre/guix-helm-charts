@@ -10,6 +10,20 @@
   #:use-module (guix build-system copy))
 
 
+(define-public mastodon-5.0.0
+  (package
+   (name "mastodon")
+   (version "5.0.0")
+   (source (origin
+            (method url-fetch)
+            (uri "https://charts.bitnami.com/bitnami/mastodon-5.0.0.tgz")
+            (sha256 #f)))
+   (build-system copy-build-system)
+   (home-page "https://bitnami.com")
+   (synopsis "Mastodon is self-hosted social network server based on ActivityPub. Written in Ruby, features real-time updates, multimedia attachments and no vendor lock-in.")
+   (description "Mastodon is self-hosted social network server based on ActivityPub. Written in Ruby, features real-time updates, multimedia attachments and no vendor lock-in.")
+   (license #f)))
+
 (define-public mastodon-4.7.3
   (package
    (name "mastodon")

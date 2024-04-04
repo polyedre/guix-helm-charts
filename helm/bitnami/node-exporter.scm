@@ -10,6 +10,20 @@
   #:use-module (guix build-system copy))
 
 
+(define-public node-exporter-4.0.1
+  (package
+   (name "node-exporter")
+   (version "4.0.1")
+   (source (origin
+            (method url-fetch)
+            (uri "https://charts.bitnami.com/bitnami/node-exporter-4.0.1.tgz")
+            (sha256 #f)))
+   (build-system copy-build-system)
+   (home-page "https://bitnami.com")
+   (synopsis "Prometheus exporter for hardware and OS metrics exposed by UNIX kernels, with pluggable metric collectors.")
+   (description "Prometheus exporter for hardware and OS metrics exposed by UNIX kernels, with pluggable metric collectors.")
+   (license #f)))
+
 (define-public node-exporter-4.0.0
   (package
    (name "node-exporter")

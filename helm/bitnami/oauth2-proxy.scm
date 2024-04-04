@@ -10,6 +10,20 @@
   #:use-module (guix build-system copy))
 
 
+(define-public oauth2-proxy-5.0.0
+  (package
+   (name "oauth2-proxy")
+   (version "5.0.0")
+   (source (origin
+            (method url-fetch)
+            (uri "https://charts.bitnami.com/bitnami/oauth2-proxy-5.0.0.tgz")
+            (sha256 #f)))
+   (build-system copy-build-system)
+   (home-page "https://bitnami.com")
+   (synopsis "A reverse proxy and static file server that provides authentication using Providers (Google, GitHub, and others) to validate accounts by email, domain or group.")
+   (description "A reverse proxy and static file server that provides authentication using Providers (Google, GitHub, and others) to validate accounts by email, domain or group.")
+   (license #f)))
+
 (define-public oauth2-proxy-4.10.3
   (package
    (name "oauth2-proxy")

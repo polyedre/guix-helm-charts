@@ -10,6 +10,20 @@
   #:use-module (guix build-system copy))
 
 
+(define-public influxdb-6.0.4
+  (package
+   (name "influxdb")
+   (version "6.0.4")
+   (source (origin
+            (method url-fetch)
+            (uri "https://charts.bitnami.com/bitnami/influxdb-6.0.4.tgz")
+            (sha256 #f)))
+   (build-system copy-build-system)
+   (home-page "https://bitnami.com")
+   (synopsis "InfluxDB(TM) is an open source time-series database. It is a core component of the TICK (Telegraf, InfluxDB(TM), Chronograf, Kapacitor) stack.")
+   (description "InfluxDB(TM) is an open source time-series database. It is a core component of the TICK (Telegraf, InfluxDB(TM), Chronograf, Kapacitor) stack.")
+   (license #f)))
+
 (define-public influxdb-6.0.3
   (package
    (name "influxdb")

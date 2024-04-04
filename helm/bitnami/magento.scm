@@ -10,6 +10,20 @@
   #:use-module (guix build-system copy))
 
 
+(define-public magento-26.0.0
+  (package
+   (name "magento")
+   (version "26.0.0")
+   (source (origin
+            (method url-fetch)
+            (uri "https://charts.bitnami.com/bitnami/magento-26.0.0.tgz")
+            (sha256 #f)))
+   (build-system copy-build-system)
+   (home-page "https://bitnami.com")
+   (synopsis "Magento is a powerful open source e-commerce platform. With easy customizations and rich features, it allows retailers to grow their online businesses in a cost-effective way.")
+   (description "Magento is a powerful open source e-commerce platform. With easy customizations and rich features, it allows retailers to grow their online businesses in a cost-effective way.")
+   (license #f)))
+
 (define-public magento-25.5.0
   (package
    (name "magento")

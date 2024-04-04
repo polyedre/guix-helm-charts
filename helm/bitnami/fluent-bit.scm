@@ -10,6 +10,20 @@
   #:use-module (guix build-system copy))
 
 
+(define-public fluent-bit-1.0.1
+  (package
+   (name "fluent-bit")
+   (version "1.0.1")
+   (source (origin
+            (method url-fetch)
+            (uri "https://charts.bitnami.com/bitnami/fluent-bit-1.0.1.tgz")
+            (sha256 #f)))
+   (build-system copy-build-system)
+   (home-page "https://bitnami.com")
+   (synopsis "Fluent Bit is a Fast and Lightweight Log Processor and Forwarder. It has been made with a strong focus on performance to allow the collection of events from different sources without complexity.")
+   (description "Fluent Bit is a Fast and Lightweight Log Processor and Forwarder. It has been made with a strong focus on performance to allow the collection of events from different sources without complexity.")
+   (license #f)))
+
 (define-public fluent-bit-1.0.0
   (package
    (name "fluent-bit")

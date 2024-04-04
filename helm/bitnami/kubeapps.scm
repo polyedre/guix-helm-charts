@@ -10,6 +10,20 @@
   #:use-module (guix build-system copy))
 
 
+(define-public kubeapps-15.0.0
+  (package
+   (name "kubeapps")
+   (version "15.0.0")
+   (source (origin
+            (method url-fetch)
+            (uri "https://charts.bitnami.com/bitnami/kubeapps-15.0.0.tgz")
+            (sha256 #f)))
+   (build-system copy-build-system)
+   (home-page "https://bitnami.com")
+   (synopsis "Kubeapps is a web-based UI for launching and managing applications on Kubernetes. It allows users to deploy trusted applications and operators to control users access to the cluster.")
+   (description "Kubeapps is a web-based UI for launching and managing applications on Kubernetes. It allows users to deploy trusted applications and operators to control users access to the cluster.")
+   (license #f)))
+
 (define-public kubeapps-14.7.2
   (package
    (name "kubeapps")

@@ -10,6 +10,34 @@
   #:use-module (guix build-system copy))
 
 
+(define-public redmine-28.0.0
+  (package
+   (name "redmine")
+   (version "28.0.0")
+   (source (origin
+            (method url-fetch)
+            (uri "https://charts.bitnami.com/bitnami/redmine-28.0.0.tgz")
+            (sha256 #f)))
+   (build-system copy-build-system)
+   (home-page "https://bitnami.com")
+   (synopsis "Redmine is an open source management application. It includes a tracking issue system, Gantt charts for a visual view of projects and deadlines, and supports SCM integration for version control.")
+   (description "Redmine is an open source management application. It includes a tracking issue system, Gantt charts for a visual view of projects and deadlines, and supports SCM integration for version control.")
+   (license #f)))
+
+(define-public redmine-27.1.1
+  (package
+   (name "redmine")
+   (version "27.1.1")
+   (source (origin
+            (method url-fetch)
+            (uri "https://charts.bitnami.com/bitnami/redmine-27.1.1.tgz")
+            (sha256 #f)))
+   (build-system copy-build-system)
+   (home-page "https://bitnami.com")
+   (synopsis "Redmine is an open source management application. It includes a tracking issue system, Gantt charts for a visual view of projects and deadlines, and supports SCM integration for version control.")
+   (description "Redmine is an open source management application. It includes a tracking issue system, Gantt charts for a visual view of projects and deadlines, and supports SCM integration for version control.")
+   (license #f)))
+
 (define-public redmine-27.1.0
   (package
    (name "redmine")

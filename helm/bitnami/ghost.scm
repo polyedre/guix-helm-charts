@@ -10,6 +10,34 @@
   #:use-module (guix build-system copy))
 
 
+(define-public ghost-20.0.0
+  (package
+   (name "ghost")
+   (version "20.0.0")
+   (source (origin
+            (method url-fetch)
+            (uri "https://charts.bitnami.com/bitnami/ghost-20.0.0.tgz")
+            (sha256 #f)))
+   (build-system copy-build-system)
+   (home-page "https://bitnami.com")
+   (synopsis "Ghost is an open source publishing platform designed to create blogs, magazines, and news sites. It includes a simple markdown editor with preview, theming, and SEO built-in to simplify editing.")
+   (description "Ghost is an open source publishing platform designed to create blogs, magazines, and news sites. It includes a simple markdown editor with preview, theming, and SEO built-in to simplify editing.")
+   (license #f)))
+
+(define-public ghost-19.11.7
+  (package
+   (name "ghost")
+   (version "19.11.7")
+   (source (origin
+            (method url-fetch)
+            (uri "https://charts.bitnami.com/bitnami/ghost-19.11.7.tgz")
+            (sha256 #f)))
+   (build-system copy-build-system)
+   (home-page "https://bitnami.com")
+   (synopsis "Ghost is an open source publishing platform designed to create blogs, magazines, and news sites. It includes a simple markdown editor with preview, theming, and SEO built-in to simplify editing.")
+   (description "Ghost is an open source publishing platform designed to create blogs, magazines, and news sites. It includes a simple markdown editor with preview, theming, and SEO built-in to simplify editing.")
+   (license #f)))
+
 (define-public ghost-19.11.6
   (package
    (name "ghost")

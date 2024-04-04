@@ -10,6 +10,34 @@
   #:use-module (guix build-system copy))
 
 
+(define-public grafana-10.0.5
+  (package
+   (name "grafana")
+   (version "10.0.5")
+   (source (origin
+            (method url-fetch)
+            (uri "https://charts.bitnami.com/bitnami/grafana-10.0.5.tgz")
+            (sha256 #f)))
+   (build-system copy-build-system)
+   (home-page "https://bitnami.com")
+   (synopsis "Grafana is an open source metric analytics and visualization suite for visualizing time series data that supports various types of data sources.")
+   (description "Grafana is an open source metric analytics and visualization suite for visualizing time series data that supports various types of data sources.")
+   (license #f)))
+
+(define-public grafana-10.0.4
+  (package
+   (name "grafana")
+   (version "10.0.4")
+   (source (origin
+            (method url-fetch)
+            (uri "https://charts.bitnami.com/bitnami/grafana-10.0.4.tgz")
+            (sha256 #f)))
+   (build-system copy-build-system)
+   (home-page "https://bitnami.com")
+   (synopsis "Grafana is an open source metric analytics and visualization suite for visualizing time series data that supports various types of data sources.")
+   (description "Grafana is an open source metric analytics and visualization suite for visualizing time series data that supports various types of data sources.")
+   (license #f)))
+
 (define-public grafana-10.0.3
   (package
    (name "grafana")

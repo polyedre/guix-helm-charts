@@ -10,6 +10,34 @@
   #:use-module (guix build-system copy))
 
 
+(define-public gitea-2.0.1
+  (package
+   (name "gitea")
+   (version "2.0.1")
+   (source (origin
+            (method url-fetch)
+            (uri "https://charts.bitnami.com/bitnami/gitea-2.0.1.tgz")
+            (sha256 #f)))
+   (build-system copy-build-system)
+   (home-page "https://bitnami.com")
+   (synopsis "Gitea is a lightweight code hosting solution. Written in Go, features low resource consumption, easy upgrades and multiple databases.")
+   (description "Gitea is a lightweight code hosting solution. Written in Go, features low resource consumption, easy upgrades and multiple databases.")
+   (license #f)))
+
+(define-public gitea-2.0.0
+  (package
+   (name "gitea")
+   (version "2.0.0")
+   (source (origin
+            (method url-fetch)
+            (uri "https://charts.bitnami.com/bitnami/gitea-2.0.0.tgz")
+            (sha256 #f)))
+   (build-system copy-build-system)
+   (home-page "https://bitnami.com")
+   (synopsis "Gitea is a lightweight code hosting solution. Written in Go, features low resource consumption, easy upgrades and multiple databases.")
+   (description "Gitea is a lightweight code hosting solution. Written in Go, features low resource consumption, easy upgrades and multiple databases.")
+   (license #f)))
+
 (define-public gitea-1.6.4
   (package
    (name "gitea")

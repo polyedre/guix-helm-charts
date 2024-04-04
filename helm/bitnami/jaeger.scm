@@ -10,6 +10,20 @@
   #:use-module (guix build-system copy))
 
 
+(define-public jaeger-1.11.3
+  (package
+   (name "jaeger")
+   (version "1.11.3")
+   (source (origin
+            (method url-fetch)
+            (uri "https://charts.bitnami.com/bitnami/jaeger-1.11.3.tgz")
+            (sha256 #f)))
+   (build-system copy-build-system)
+   (home-page "https://bitnami.com")
+   (synopsis "Jaeger is a distributed tracing system. It is used for monitoring and troubleshooting microservices-based distributed systems.")
+   (description "Jaeger is a distributed tracing system. It is used for monitoring and troubleshooting microservices-based distributed systems.")
+   (license #f)))
+
 (define-public jaeger-1.11.2
   (package
    (name "jaeger")

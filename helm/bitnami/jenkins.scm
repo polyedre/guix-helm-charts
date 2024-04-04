@@ -10,6 +10,20 @@
   #:use-module (guix build-system copy))
 
 
+(define-public jenkins-13.0.0
+  (package
+   (name "jenkins")
+   (version "13.0.0")
+   (source (origin
+            (method url-fetch)
+            (uri "https://charts.bitnami.com/bitnami/jenkins-13.0.0.tgz")
+            (sha256 #f)))
+   (build-system copy-build-system)
+   (home-page "https://bitnami.com")
+   (synopsis "Jenkins is an open source Continuous Integration and Continuous Delivery (CI/CD) server designed to automate the building, testing, and deploying of any software project.")
+   (description "Jenkins is an open source Continuous Integration and Continuous Delivery (CI/CD) server designed to automate the building, testing, and deploying of any software project.")
+   (license #f)))
+
 (define-public jenkins-12.11.1
   (package
    (name "jenkins")

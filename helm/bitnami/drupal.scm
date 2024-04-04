@@ -10,6 +10,48 @@
   #:use-module (guix build-system copy))
 
 
+(define-public drupal-18.0.1
+  (package
+   (name "drupal")
+   (version "18.0.1")
+   (source (origin
+            (method url-fetch)
+            (uri "https://charts.bitnami.com/bitnami/drupal-18.0.1.tgz")
+            (sha256 #f)))
+   (build-system copy-build-system)
+   (home-page "https://bitnami.com")
+   (synopsis "Drupal is one of the most versatile open source content management systems in the world. It is pre-configured with the Ctools and Views modules, Drush and Let's Encrypt auto-configuration support.")
+   (description "Drupal is one of the most versatile open source content management systems in the world. It is pre-configured with the Ctools and Views modules, Drush and Let's Encrypt auto-configuration support.")
+   (license #f)))
+
+(define-public drupal-18.0.0
+  (package
+   (name "drupal")
+   (version "18.0.0")
+   (source (origin
+            (method url-fetch)
+            (uri "https://charts.bitnami.com/bitnami/drupal-18.0.0.tgz")
+            (sha256 #f)))
+   (build-system copy-build-system)
+   (home-page "https://bitnami.com")
+   (synopsis "Drupal is one of the most versatile open source content management systems in the world. It is pre-configured with the Ctools and Views modules, Drush and Let's Encrypt auto-configuration support.")
+   (description "Drupal is one of the most versatile open source content management systems in the world. It is pre-configured with the Ctools and Views modules, Drush and Let's Encrypt auto-configuration support.")
+   (license #f)))
+
+(define-public drupal-17.6.5
+  (package
+   (name "drupal")
+   (version "17.6.5")
+   (source (origin
+            (method url-fetch)
+            (uri "https://charts.bitnami.com/bitnami/drupal-17.6.5.tgz")
+            (sha256 #f)))
+   (build-system copy-build-system)
+   (home-page "https://bitnami.com")
+   (synopsis "Drupal is one of the most versatile open source content management systems in the world. It is pre-configured with the Ctools and Views modules, Drush and Let's Encrypt auto-configuration support.")
+   (description "Drupal is one of the most versatile open source content management systems in the world. It is pre-configured with the Ctools and Views modules, Drush and Let's Encrypt auto-configuration support.")
+   (license #f)))
+
 (define-public drupal-17.6.4
   (package
    (name "drupal")

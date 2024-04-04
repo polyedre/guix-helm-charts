@@ -10,6 +10,20 @@
   #:use-module (guix build-system copy))
 
 
+(define-public external-dns-7.1.1
+  (package
+   (name "external-dns")
+   (version "7.1.1")
+   (source (origin
+            (method url-fetch)
+            (uri "https://charts.bitnami.com/bitnami/external-dns-7.1.1.tgz")
+            (sha256 #f)))
+   (build-system copy-build-system)
+   (home-page "https://bitnami.com")
+   (synopsis "ExternalDNS is a Kubernetes addon that configures public DNS servers with information about exposed Kubernetes services to make them discoverable.")
+   (description "ExternalDNS is a Kubernetes addon that configures public DNS servers with information about exposed Kubernetes services to make them discoverable.")
+   (license #f)))
+
 (define-public external-dns-7.1.0
   (package
    (name "external-dns")

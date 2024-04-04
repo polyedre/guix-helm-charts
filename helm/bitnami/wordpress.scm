@@ -10,6 +10,76 @@
   #:use-module (guix build-system copy))
 
 
+(define-public wordpress-22.1.1
+  (package
+   (name "wordpress")
+   (version "22.1.1")
+   (source (origin
+            (method url-fetch)
+            (uri "https://charts.bitnami.com/bitnami/wordpress-22.1.1.tgz")
+            (sha256 #f)))
+   (build-system copy-build-system)
+   (home-page "https://bitnami.com")
+   (synopsis "WordPress is the world's most popular blogging and content management platform. Powerful yet simple, everyone from students to global corporations use it to build beautiful, functional websites.")
+   (description "WordPress is the world's most popular blogging and content management platform. Powerful yet simple, everyone from students to global corporations use it to build beautiful, functional websites.")
+   (license #f)))
+
+(define-public wordpress-22.1.0
+  (package
+   (name "wordpress")
+   (version "22.1.0")
+   (source (origin
+            (method url-fetch)
+            (uri "https://charts.bitnami.com/bitnami/wordpress-22.1.0.tgz")
+            (sha256 #f)))
+   (build-system copy-build-system)
+   (home-page "https://bitnami.com")
+   (synopsis "WordPress is the world's most popular blogging and content management platform. Powerful yet simple, everyone from students to global corporations use it to build beautiful, functional websites.")
+   (description "WordPress is the world's most popular blogging and content management platform. Powerful yet simple, everyone from students to global corporations use it to build beautiful, functional websites.")
+   (license #f)))
+
+(define-public wordpress-21.0.10
+  (package
+   (name "wordpress")
+   (version "21.0.10")
+   (source (origin
+            (method url-fetch)
+            (uri "https://charts.bitnami.com/bitnami/wordpress-21.0.10.tgz")
+            (sha256 #f)))
+   (build-system copy-build-system)
+   (home-page "https://bitnami.com")
+   (synopsis "WordPress is the world's most popular blogging and content management platform. Powerful yet simple, everyone from students to global corporations use it to build beautiful, functional websites.")
+   (description "WordPress is the world's most popular blogging and content management platform. Powerful yet simple, everyone from students to global corporations use it to build beautiful, functional websites.")
+   (license #f)))
+
+(define-public wordpress-21.0.9
+  (package
+   (name "wordpress")
+   (version "21.0.9")
+   (source (origin
+            (method url-fetch)
+            (uri "https://charts.bitnami.com/bitnami/wordpress-21.0.9.tgz")
+            (sha256 #f)))
+   (build-system copy-build-system)
+   (home-page "https://bitnami.com")
+   (synopsis "WordPress is the world's most popular blogging and content management platform. Powerful yet simple, everyone from students to global corporations use it to build beautiful, functional websites.")
+   (description "WordPress is the world's most popular blogging and content management platform. Powerful yet simple, everyone from students to global corporations use it to build beautiful, functional websites.")
+   (license #f)))
+
+(define-public wordpress-21.0.8
+  (package
+   (name "wordpress")
+   (version "21.0.8")
+   (source (origin
+            (method url-fetch)
+            (uri "https://charts.bitnami.com/bitnami/wordpress-21.0.8.tgz")
+            (sha256 #f)))
+   (build-system copy-build-system)
+   (home-page "https://bitnami.com")
+   (synopsis "WordPress is the world's most popular blogging and content management platform. Powerful yet simple, everyone from students to global corporations use it to build beautiful, functional websites.")
+   (description "WordPress is the world's most popular blogging and content management platform. Powerful yet simple, everyone from students to global corporations use it to build beautiful, functional websites.")
+   (license #f)))
+
 (define-public wordpress-21.0.7
   (package
    (name "wordpress")

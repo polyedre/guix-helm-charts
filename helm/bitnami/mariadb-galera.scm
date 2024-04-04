@@ -10,6 +10,20 @@
   #:use-module (guix build-system copy))
 
 
+(define-public mariadb-galera-13.0.0
+  (package
+   (name "mariadb-galera")
+   (version "13.0.0")
+   (source (origin
+            (method url-fetch)
+            (uri "https://charts.bitnami.com/bitnami/mariadb-galera-13.0.0.tgz")
+            (sha256 #f)))
+   (build-system copy-build-system)
+   (home-page "https://bitnami.com")
+   (synopsis "MariaDB Galera is a multi-primary database cluster solution for synchronous replication and high availability.")
+   (description "MariaDB Galera is a multi-primary database cluster solution for synchronous replication and high availability.")
+   (license #f)))
+
 (define-public mariadb-galera-12.0.2
   (package
    (name "mariadb-galera")

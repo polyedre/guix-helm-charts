@@ -10,6 +10,20 @@
   #:use-module (guix build-system copy))
 
 
+(define-public cert-manager-1.0.1
+  (package
+   (name "cert-manager")
+   (version "1.0.1")
+   (source (origin
+            (method url-fetch)
+            (uri "https://charts.bitnami.com/bitnami/cert-manager-1.0.1.tgz")
+            (sha256 #f)))
+   (build-system copy-build-system)
+   (home-page "https://bitnami.com")
+   (synopsis "cert-manager is a Kubernetes add-on to automate the management and issuance of TLS certificates from various issuing sources.")
+   (description "cert-manager is a Kubernetes add-on to automate the management and issuance of TLS certificates from various issuing sources.")
+   (license #f)))
+
 (define-public cert-manager-1.0.0
   (package
    (name "cert-manager")

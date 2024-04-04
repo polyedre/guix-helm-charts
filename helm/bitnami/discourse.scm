@@ -10,6 +10,20 @@
   #:use-module (guix build-system copy))
 
 
+(define-public discourse-13.0.0
+  (package
+   (name "discourse")
+   (version "13.0.0")
+   (source (origin
+            (method url-fetch)
+            (uri "https://charts.bitnami.com/bitnami/discourse-13.0.0.tgz")
+            (sha256 #f)))
+   (build-system copy-build-system)
+   (home-page "https://bitnami.com")
+   (synopsis "Discourse is an open source discussion platform with built-in moderation and governance systems that let discussion communities protect themselves from bad actors even without official moderators.")
+   (description "Discourse is an open source discussion platform with built-in moderation and governance systems that let discussion communities protect themselves from bad actors even without official moderators.")
+   (license #f)))
+
 (define-public discourse-12.8.0
   (package
    (name "discourse")

@@ -10,6 +10,20 @@
   #:use-module (guix build-system copy))
 
 
+(define-public aspnet-core-6.0.0
+  (package
+   (name "aspnet-core")
+   (version "6.0.0")
+   (source (origin
+            (method url-fetch)
+            (uri "https://charts.bitnami.com/bitnami/aspnet-core-6.0.0.tgz")
+            (sha256 #f)))
+   (build-system copy-build-system)
+   (home-page "https://bitnami.com")
+   (synopsis "ASP.NET Core is an open-source framework for web application development created by Microsoft. It runs on both the full .NET Framework, on Windows, and the cross-platform .NET Core.")
+   (description "ASP.NET Core is an open-source framework for web application development created by Microsoft. It runs on both the full .NET Framework, on Windows, and the cross-platform .NET Core.")
+   (license #f)))
+
 (define-public aspnet-core-5.7.1
   (package
    (name "aspnet-core")

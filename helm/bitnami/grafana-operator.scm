@@ -10,6 +10,34 @@
   #:use-module (guix build-system copy))
 
 
+(define-public grafana-operator-4.0.1
+  (package
+   (name "grafana-operator")
+   (version "4.0.1")
+   (source (origin
+            (method url-fetch)
+            (uri "https://charts.bitnami.com/bitnami/grafana-operator-4.0.1.tgz")
+            (sha256 #f)))
+   (build-system copy-build-system)
+   (home-page "https://bitnami.com")
+   (synopsis "Grafana Operator is a Kubernetes operator that enables the installation and management of Grafana instances, dashboards and plugins.")
+   (description "Grafana Operator is a Kubernetes operator that enables the installation and management of Grafana instances, dashboards and plugins.")
+   (license #f)))
+
+(define-public grafana-operator-4.0.0
+  (package
+   (name "grafana-operator")
+   (version "4.0.0")
+   (source (origin
+            (method url-fetch)
+            (uri "https://charts.bitnami.com/bitnami/grafana-operator-4.0.0.tgz")
+            (sha256 #f)))
+   (build-system copy-build-system)
+   (home-page "https://bitnami.com")
+   (synopsis "Grafana Operator is a Kubernetes operator that enables the installation and management of Grafana instances, dashboards and plugins.")
+   (description "Grafana Operator is a Kubernetes operator that enables the installation and management of Grafana instances, dashboards and plugins.")
+   (license #f)))
+
 (define-public grafana-operator-3.12.3
   (package
    (name "grafana-operator")

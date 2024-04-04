@@ -10,6 +10,20 @@
   #:use-module (guix build-system copy))
 
 
+(define-public etcd-10.0.2
+  (package
+   (name "etcd")
+   (version "10.0.2")
+   (source (origin
+            (method url-fetch)
+            (uri "https://charts.bitnami.com/bitnami/etcd-10.0.2.tgz")
+            (sha256 #f)))
+   (build-system copy-build-system)
+   (home-page "https://bitnami.com")
+   (synopsis "etcd is a distributed key-value store designed to securely store data across a cluster. etcd is widely used in production on account of its reliability, fault-tolerance and ease of use.")
+   (description "etcd is a distributed key-value store designed to securely store data across a cluster. etcd is widely used in production on account of its reliability, fault-tolerance and ease of use.")
+   (license #f)))
+
 (define-public etcd-10.0.1
   (package
    (name "etcd")

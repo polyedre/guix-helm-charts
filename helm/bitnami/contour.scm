@@ -10,6 +10,20 @@
   #:use-module (guix build-system copy))
 
 
+(define-public contour-17.0.2
+  (package
+   (name "contour")
+   (version "17.0.2")
+   (source (origin
+            (method url-fetch)
+            (uri "https://charts.bitnami.com/bitnami/contour-17.0.2.tgz")
+            (sha256 #f)))
+   (build-system copy-build-system)
+   (home-page "https://bitnami.com")
+   (synopsis "Contour is an open source Kubernetes ingress controller that works by deploying the Envoy proxy as a reverse proxy and load balancer.")
+   (description "Contour is an open source Kubernetes ingress controller that works by deploying the Envoy proxy as a reverse proxy and load balancer.")
+   (license #f)))
+
 (define-public contour-17.0.1
   (package
    (name "contour")

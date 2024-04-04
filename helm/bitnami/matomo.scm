@@ -10,6 +10,48 @@
   #:use-module (guix build-system copy))
 
 
+(define-public matomo-7.0.1
+  (package
+   (name "matomo")
+   (version "7.0.1")
+   (source (origin
+            (method url-fetch)
+            (uri "https://charts.bitnami.com/bitnami/matomo-7.0.1.tgz")
+            (sha256 #f)))
+   (build-system copy-build-system)
+   (home-page "https://bitnami.com")
+   (synopsis "Matomo, formerly known as Piwik, is a real time web analytics program. It provides detailed reports on website visitors.")
+   (description "Matomo, formerly known as Piwik, is a real time web analytics program. It provides detailed reports on website visitors.")
+   (license #f)))
+
+(define-public matomo-7.0.0
+  (package
+   (name "matomo")
+   (version "7.0.0")
+   (source (origin
+            (method url-fetch)
+            (uri "https://charts.bitnami.com/bitnami/matomo-7.0.0.tgz")
+            (sha256 #f)))
+   (build-system copy-build-system)
+   (home-page "https://bitnami.com")
+   (synopsis "Matomo, formerly known as Piwik, is a real time web analytics program. It provides detailed reports on website visitors.")
+   (description "Matomo, formerly known as Piwik, is a real time web analytics program. It provides detailed reports on website visitors.")
+   (license #f)))
+
+(define-public matomo-6.0.1
+  (package
+   (name "matomo")
+   (version "6.0.1")
+   (source (origin
+            (method url-fetch)
+            (uri "https://charts.bitnami.com/bitnami/matomo-6.0.1.tgz")
+            (sha256 #f)))
+   (build-system copy-build-system)
+   (home-page "https://bitnami.com")
+   (synopsis "Matomo, formerly known as Piwik, is a real time web analytics program. It provides detailed reports on website visitors.")
+   (description "Matomo, formerly known as Piwik, is a real time web analytics program. It provides detailed reports on website visitors.")
+   (license #f)))
+
 (define-public matomo-6.0.0
   (package
    (name "matomo")

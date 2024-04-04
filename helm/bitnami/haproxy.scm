@@ -10,6 +10,20 @@
   #:use-module (guix build-system copy))
 
 
+(define-public haproxy-1.0.1
+  (package
+   (name "haproxy")
+   (version "1.0.1")
+   (source (origin
+            (method url-fetch)
+            (uri "https://charts.bitnami.com/bitnami/haproxy-1.0.1.tgz")
+            (sha256 #f)))
+   (build-system copy-build-system)
+   (home-page "https://bitnami.com")
+   (synopsis "HAProxy is a TCP proxy and a HTTP reverse proxy. It supports SSL termination and offloading, TCP and HTTP normalization, traffic regulation, caching and protection against DDoS attacks.")
+   (description "HAProxy is a TCP proxy and a HTTP reverse proxy. It supports SSL termination and offloading, TCP and HTTP normalization, traffic regulation, caching and protection against DDoS attacks.")
+   (license #f)))
+
 (define-public haproxy-1.0.0
   (package
    (name "haproxy")

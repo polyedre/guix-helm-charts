@@ -1,0 +1,81 @@
+
+(define-module (helm prometheus-community alertmanager-snmp-notifier)
+  #:use-module (guix utils)
+  #:use-module (guix gexp)
+  #:use-module (guix build utils)
+  #:use-module (json)
+  #:use-module (gnu packages base)
+  #:use-module (guix packages)
+  #:use-module (guix download)
+  #:use-module (guix build-system copy))
+
+
+(define-public alertmanager-snmp-notifier-0.3.0
+  (package
+   (name "alertmanager-snmp-notifier")
+   (version "0.3.0")
+   (source (origin
+            (method url-fetch)
+            (uri "https://github.com/prometheus-community/helm-charts/releases/download/alertmanager-snmp-notifier-0.3.0/alertmanager-snmp-notifier-0.3.0.tgz")
+            (sha256 #f)))
+   (build-system copy-build-system)
+   (home-page "https://github.com/maxwo/snmp_notifier")
+   (synopsis "The SNMP Notifier handles alerts coming from Prometheus Alertmanager and relay them as SNMP traps.")
+   (description "The SNMP Notifier handles alerts coming from Prometheus Alertmanager and relay them as SNMP traps.")
+   (license #f)))
+
+(define-public alertmanager-snmp-notifier-0.2.0
+  (package
+   (name "alertmanager-snmp-notifier")
+   (version "0.2.0")
+   (source (origin
+            (method url-fetch)
+            (uri "https://github.com/prometheus-community/helm-charts/releases/download/alertmanager-snmp-notifier-0.2.0/alertmanager-snmp-notifier-0.2.0.tgz")
+            (sha256 #f)))
+   (build-system copy-build-system)
+   (home-page "https://github.com/maxwo/snmp_notifier")
+   (synopsis "The SNMP Notifier handles alerts coming from Prometheus Alertmanager and relay them as SNMP traps.")
+   (description "The SNMP Notifier handles alerts coming from Prometheus Alertmanager and relay them as SNMP traps.")
+   (license #f)))
+
+(define-public alertmanager-snmp-notifier-0.1.2
+  (package
+   (name "alertmanager-snmp-notifier")
+   (version "0.1.2")
+   (source (origin
+            (method url-fetch)
+            (uri "https://github.com/prometheus-community/helm-charts/releases/download/alertmanager-snmp-notifier-0.1.2/alertmanager-snmp-notifier-0.1.2.tgz")
+            (sha256 #f)))
+   (build-system copy-build-system)
+   (home-page "https://github.com/maxwo/snmp_notifier")
+   (synopsis "The SNMP Notifier handles alerts coming from Prometheus Alertmanager and relay them as SNMP traps.")
+   (description "The SNMP Notifier handles alerts coming from Prometheus Alertmanager and relay them as SNMP traps.")
+   (license #f)))
+
+(define-public alertmanager-snmp-notifier-0.1.1
+  (package
+   (name "alertmanager-snmp-notifier")
+   (version "0.1.1")
+   (source (origin
+            (method url-fetch)
+            (uri "https://github.com/prometheus-community/helm-charts/releases/download/alertmanager-snmp-notifier-0.1.1/alertmanager-snmp-notifier-0.1.1.tgz")
+            (sha256 #f)))
+   (build-system copy-build-system)
+   (home-page "https://github.com/maxwo/snmp_notifier")
+   (synopsis "The SNMP Notifier handles alerts coming from Prometheus Alertmanager and relay them as SNMP traps.")
+   (description "The SNMP Notifier handles alerts coming from Prometheus Alertmanager and relay them as SNMP traps.")
+   (license #f)))
+
+(define-public alertmanager-snmp-notifier-0.1.0
+  (package
+   (name "alertmanager-snmp-notifier")
+   (version "0.1.0")
+   (source (origin
+            (method url-fetch)
+            (uri "https://github.com/prometheus-community/helm-charts/releases/download/alertmanager-snmp-notifier-0.1.0/alertmanager-snmp-notifier-0.1.0.tgz")
+            (sha256 #f)))
+   (build-system copy-build-system)
+   (home-page "https://github.com/maxwo/snmp_notifier")
+   (synopsis "The SNMP Notifier handles alerts coming from Prometheus Alertmanager and relay them as SNMP traps.")
+   (description "The SNMP Notifier handles alerts coming from Prometheus Alertmanager and relay them as SNMP traps.")
+   (license #f)))

@@ -10,6 +10,20 @@
   #:use-module (guix build-system copy))
 
 
+(define-public logstash-6.0.2
+  (package
+   (name "logstash")
+   (version "6.0.2")
+   (source (origin
+            (method url-fetch)
+            (uri "https://charts.bitnami.com/bitnami/logstash-6.0.2.tgz")
+            (sha256 #f)))
+   (build-system copy-build-system)
+   (home-page "https://bitnami.com")
+   (synopsis "Logstash is an open source data processing engine. It ingests data from multiple sources, processes it, and sends the output to final destination in real-time. It is a core component of the ELK stack.")
+   (description "Logstash is an open source data processing engine. It ingests data from multiple sources, processes it, and sends the output to final destination in real-time. It is a core component of the ELK stack.")
+   (license #f)))
+
 (define-public logstash-6.0.1
   (package
    (name "logstash")

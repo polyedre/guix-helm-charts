@@ -10,6 +10,48 @@
   #:use-module (guix build-system copy))
 
 
+(define-public spring-cloud-dataflow-27.0.1
+  (package
+   (name "spring-cloud-dataflow")
+   (version "27.0.1")
+   (source (origin
+            (method url-fetch)
+            (uri "https://charts.bitnami.com/bitnami/spring-cloud-dataflow-27.0.1.tgz")
+            (sha256 #f)))
+   (build-system copy-build-system)
+   (home-page "https://bitnami.com")
+   (synopsis "Spring Cloud Data Flow is a microservices-based toolkit for building streaming and batch data processing pipelines in Cloud Foundry and Kubernetes.")
+   (description "Spring Cloud Data Flow is a microservices-based toolkit for building streaming and batch data processing pipelines in Cloud Foundry and Kubernetes.")
+   (license #f)))
+
+(define-public spring-cloud-dataflow-27.0.0
+  (package
+   (name "spring-cloud-dataflow")
+   (version "27.0.0")
+   (source (origin
+            (method url-fetch)
+            (uri "https://charts.bitnami.com/bitnami/spring-cloud-dataflow-27.0.0.tgz")
+            (sha256 #f)))
+   (build-system copy-build-system)
+   (home-page "https://bitnami.com")
+   (synopsis "Spring Cloud Data Flow is a microservices-based toolkit for building streaming and batch data processing pipelines in Cloud Foundry and Kubernetes.")
+   (description "Spring Cloud Data Flow is a microservices-based toolkit for building streaming and batch data processing pipelines in Cloud Foundry and Kubernetes.")
+   (license #f)))
+
+(define-public spring-cloud-dataflow-26.13.2
+  (package
+   (name "spring-cloud-dataflow")
+   (version "26.13.2")
+   (source (origin
+            (method url-fetch)
+            (uri "https://charts.bitnami.com/bitnami/spring-cloud-dataflow-26.13.2.tgz")
+            (sha256 #f)))
+   (build-system copy-build-system)
+   (home-page "https://bitnami.com")
+   (synopsis "Spring Cloud Data Flow is a microservices-based toolkit for building streaming and batch data processing pipelines in Cloud Foundry and Kubernetes.")
+   (description "Spring Cloud Data Flow is a microservices-based toolkit for building streaming and batch data processing pipelines in Cloud Foundry and Kubernetes.")
+   (license #f)))
+
 (define-public spring-cloud-dataflow-26.13.1
   (package
    (name "spring-cloud-dataflow")

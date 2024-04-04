@@ -10,6 +10,48 @@
   #:use-module (guix build-system copy))
 
 
+(define-public kube-prometheus-9.0.0
+  (package
+   (name "kube-prometheus")
+   (version "9.0.0")
+   (source (origin
+            (method url-fetch)
+            (uri "https://charts.bitnami.com/bitnami/kube-prometheus-9.0.0.tgz")
+            (sha256 #f)))
+   (build-system copy-build-system)
+   (home-page "https://bitnami.com")
+   (synopsis "Prometheus Operator provides easy monitoring definitions for Kubernetes services and deployment and management of Prometheus instances.")
+   (description "Prometheus Operator provides easy monitoring definitions for Kubernetes services and deployment and management of Prometheus instances.")
+   (license #f)))
+
+(define-public kube-prometheus-8.30.3
+  (package
+   (name "kube-prometheus")
+   (version "8.30.3")
+   (source (origin
+            (method url-fetch)
+            (uri "https://charts.bitnami.com/bitnami/kube-prometheus-8.30.3.tgz")
+            (sha256 #f)))
+   (build-system copy-build-system)
+   (home-page "https://bitnami.com")
+   (synopsis "Prometheus Operator provides easy monitoring definitions for Kubernetes services and deployment and management of Prometheus instances.")
+   (description "Prometheus Operator provides easy monitoring definitions for Kubernetes services and deployment and management of Prometheus instances.")
+   (license #f)))
+
+(define-public kube-prometheus-8.30.2
+  (package
+   (name "kube-prometheus")
+   (version "8.30.2")
+   (source (origin
+            (method url-fetch)
+            (uri "https://charts.bitnami.com/bitnami/kube-prometheus-8.30.2.tgz")
+            (sha256 #f)))
+   (build-system copy-build-system)
+   (home-page "https://bitnami.com")
+   (synopsis "Prometheus Operator provides easy monitoring definitions for Kubernetes services and deployment and management of Prometheus instances.")
+   (description "Prometheus Operator provides easy monitoring definitions for Kubernetes services and deployment and management of Prometheus instances.")
+   (license #f)))
+
 (define-public kube-prometheus-8.30.1
   (package
    (name "kube-prometheus")

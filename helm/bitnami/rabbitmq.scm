@@ -10,6 +10,34 @@
   #:use-module (guix build-system copy))
 
 
+(define-public rabbitmq-13.0.2
+  (package
+   (name "rabbitmq")
+   (version "13.0.2")
+   (source (origin
+            (method url-fetch)
+            (uri "https://charts.bitnami.com/bitnami/rabbitmq-13.0.2.tgz")
+            (sha256 #f)))
+   (build-system copy-build-system)
+   (home-page "https://bitnami.com")
+   (synopsis "RabbitMQ is an open source general-purpose message broker that is designed for consistent, highly-available messaging scenarios (both synchronous and asynchronous).")
+   (description "RabbitMQ is an open source general-purpose message broker that is designed for consistent, highly-available messaging scenarios (both synchronous and asynchronous).")
+   (license #f)))
+
+(define-public rabbitmq-13.0.1
+  (package
+   (name "rabbitmq")
+   (version "13.0.1")
+   (source (origin
+            (method url-fetch)
+            (uri "https://charts.bitnami.com/bitnami/rabbitmq-13.0.1.tgz")
+            (sha256 #f)))
+   (build-system copy-build-system)
+   (home-page "https://bitnami.com")
+   (synopsis "RabbitMQ is an open source general-purpose message broker that is designed for consistent, highly-available messaging scenarios (both synchronous and asynchronous).")
+   (description "RabbitMQ is an open source general-purpose message broker that is designed for consistent, highly-available messaging scenarios (both synchronous and asynchronous).")
+   (license #f)))
+
 (define-public rabbitmq-13.0.0
   (package
    (name "rabbitmq")

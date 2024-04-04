@@ -10,6 +10,34 @@
   #:use-module (guix build-system copy))
 
 
+(define-public phpmyadmin-15.0.0
+  (package
+   (name "phpmyadmin")
+   (version "15.0.0")
+   (source (origin
+            (method url-fetch)
+            (uri "https://charts.bitnami.com/bitnami/phpmyadmin-15.0.0.tgz")
+            (sha256 #f)))
+   (build-system copy-build-system)
+   (home-page "https://bitnami.com")
+   (synopsis "phpMyAdmin is a free software tool written in PHP, intended to handle the administration of MySQL over the Web. phpMyAdmin supports a wide range of operations on MySQL and MariaDB.")
+   (description "phpMyAdmin is a free software tool written in PHP, intended to handle the administration of MySQL over the Web. phpMyAdmin supports a wide range of operations on MySQL and MariaDB.")
+   (license #f)))
+
+(define-public phpmyadmin-14.6.1
+  (package
+   (name "phpmyadmin")
+   (version "14.6.1")
+   (source (origin
+            (method url-fetch)
+            (uri "https://charts.bitnami.com/bitnami/phpmyadmin-14.6.1.tgz")
+            (sha256 #f)))
+   (build-system copy-build-system)
+   (home-page "https://bitnami.com")
+   (synopsis "phpMyAdmin is a free software tool written in PHP, intended to handle the administration of MySQL over the Web. phpMyAdmin supports a wide range of operations on MySQL and MariaDB.")
+   (description "phpMyAdmin is a free software tool written in PHP, intended to handle the administration of MySQL over the Web. phpMyAdmin supports a wide range of operations on MySQL and MariaDB.")
+   (license #f)))
+
 (define-public phpmyadmin-14.6.0
   (package
    (name "phpmyadmin")
